@@ -2,10 +2,6 @@
 //////////////////////////////////////////////////////////////////////////////
 let numberOfallProducts = 6;
 /////////////////////////////////////////////////////////////////////////////
-let renderedItems = [];
-function Cart(item){
-    this.item = item;
-}
 let cart = new Cart([]);
 // construct all the products objects 
 let Product = function (name, src, price, discription, productType) {
@@ -161,16 +157,6 @@ function playTheVideo(event) {
         for (let i = 0; i < renderedItems.length; i++){
             form.childNodes[i].firstChild.src = renderedItems[i].src;
         }
-    }
-}
-Cart.prototype.saveCartInLocalStorage = function (cartItems){
-    // save the cart in local storage
-    localStorage.setItem('cart',JSON.stringify(cartItems));
-}
-Cart.prototype.restoreCartItems = function (){
-    // restore all cart items if existed
-    if (JSON.parse(localStorage.getItem('cart')) !== null){
-        cart.item = JSON.parse(localStorage.getItem('cart'));
     }
 }
 render('books');
