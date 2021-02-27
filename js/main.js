@@ -3,7 +3,10 @@
 let numberOfallProducts = 6;
 /////////////////////////////////////////////////////////////////////////////
 let renderedItems = [];
-let cart = [];
+function Cart(item){
+    this.item = item;
+}
+let cart = new Cart([]);
 // construct all the products objects 
 let Product = function (name, src, price, discription, productType) {
     this.name = name;
@@ -62,8 +65,9 @@ function add(event) {
     addToTheCart(btuIndex);
 }
 function addToTheCart(index) {
-    cart.push(renderedItems[index]);
-    saveCartInLocalStorage(cart);
+    // put the selected item in cart and save it in local storage
+    cart.item.push(renderedItems[index]);
+    cart.saveCartInLocalStorage(cart.item);
 }
 function render(type) {
     // remove the previous type rendered products 
@@ -159,13 +163,15 @@ function playTheVideo(event) {
         }
     }
 }
-function saveCartInLocalStorage(cartItems){
+Cart.prototype.saveCartInLocalStorage = function (cartItems){
+    // save the cart in local storage
     localStorage.setItem('cart',JSON.stringify(cartItems));
 }
-function restoreCartItems(){
+Cart.prototype.restoreCartItems = function (){
+    // restore all cart items if existed
     if (JSON.parse(localStorage.getItem('cart')) !== null){
-        cart = JSON.parse(localStorage.getItem('cart'));
+        cart.item = JSON.parse(localStorage.getItem('cart'));
     }
 }
 render('books');
-restoreCartItems();
+cart.restoreCartItems();
