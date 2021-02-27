@@ -1,28 +1,75 @@
 'use strict'
 let cart = new Cart([]);
 cart.restoreCartItems();
-console.log(cart.item);
 let table = document.getElementById('cart');
-let firstRow = document.createElement('tr');
-table.appendChild(firstRow);
-for (let i = 0; i < 4; i++){
-    let th = document.createElement('th');
-    firstRow.appendChild(th);
-    switch (i) {
-        case 0:
-            th.textContent = 'remove';
-            break;
-        case 1:
-            th.textContent = 'item'
-            break;
-        case 2:
-            th.textContent = 'discription'
-            break;
-        case 3:
-            th.textContent = 'price'
-            break;            
+function renderTable() {
+    let firstRow = document.createElement('tr');
+    table.appendChild(firstRow);
+    for (let i = 0; i < 4; i++) {
+        let th = document.createElement('th');
+        firstRow.appendChild(th);
+        switch (i) {
+            case 0:
+                th.textContent = 'remove';
+                break;
+            case 1:
+                th.textContent = 'item'
+                break;
+            case 2:
+                th.textContent = 'discription'
+                break;
+            case 3:
+                th.textContent = 'price'
+                break;
+        }
+    }
+    for (let i = 0; i < cart.item.length; i++) {
+        let itemsRow = document.createElement('tr');
+        table.appendChild(itemsRow);
+        for (let j = 0; j < 4; j++) {
+            let td = document.createElement('td');
+            itemsRow.appendChild(td);
+            switch (j) {
+                case 0:
+                    let btu = document.createElement('input');
+                    td.appendChild(btu);
+                    btu.setAttribute('type', 'submit');
+                    btu.setAttribute('value', 'remove');
+                    break;
+                case 1:
+                    renderItem(td, i);
+                    break;
+                case 2:
+                    td.textContent = 'discription'
+                    break;
+                case 3:
+                    td.textContent = 'price'
+                    break;
+            }
+        }
+    }
+    function renderItem(td, rowIndex) {
+        let type = cart.item[rowIndex].productType;
+        switch (type) {
+            case 'books':
+                // create an image
+                let bookImg = document.createElement('img');
+                td.appendChild(bookImg);
+                bookImg.setAttribute('src', cart.item[rowIndex].src);
+                break;
+            case 'tutorials':
+                // create iframe for video
+                let video = document.createElement('iframe');
+                td.appendChild(video);
+                video.setAttribute('src', cart.item[rowIndex].src);
+                break;
+            case 'classes':
+                // create an image
+                let classImg = document.createElement('img');
+                td.appendChild(classImg);
+                classImg.setAttribute('src', cart.item[rowIndex].src);
+                break;
+        }
     }
 }
-for (let i = 0; i < cart.item.length; i++){
-
-}
+renderTable();
