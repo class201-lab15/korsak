@@ -8,12 +8,12 @@ let Product = function (name, src, price, discription, productType) {
     this.name = name;
     this.src = src;
     this.price = price;
-    this.discription = discription;
+    this.discription = discription
     this.productType = productType;
     Product.allProducts.push(this);
 }
 Product.allProducts = [];
-// create products
+// create products``
 //////////////////////////////////////////////////////////////////////////////
 let book1 = new Product('headline', 'https://img.freepik.com/free-vector/geometric-leaflet-with-yellow-black-lines_1201-608.jpg?size=338&ext=jpg', 250, 'a book for head line', 'books');
 let book2 = new Product('annual report', 'https://img.freepik.com/free-vector/nice-wavy-blue-annual-report-business-brochure-design_1017-27437.jpg', 285, 'a book for annual report', 'books');

@@ -73,3 +73,30 @@ function renderTable() {
     }
 }
 renderTable();
+let tableForm=document.getElementById("tableForm")
+tableForm.addEventListener('submit',removeItem)
+function removeItem(event){
+    let index;
+    for(let i=0 ;i<cart.item.length;i++){
+        event.target[i].id="";
+    }
+    event.preventDefault();
+    console.log(event);
+    let button=event.submitter;
+    button.id='removeButton';
+    for(let i=0 ;i<cart.item.length;i++){
+        let indexId=event.target[i].id;
+        if(indexId==button.id){
+            index=i
+            break;
+        }
+
+    }
+    removeFromCart(index);
+    refreshPage();
+}
+function removeFromCart(indexNum){
+    cart.item.splice(indexNum,1);
+    cart.saveCartInLocalStorage(cart.item);
+
+}
