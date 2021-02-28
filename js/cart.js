@@ -80,9 +80,39 @@ function renderTable() {
     }
 }
 renderTable();
+<<<<<<< HEAD
 
 function refresh(){
     cart.restoreCartItems();
     renderTable();
 }
 refresh();
+=======
+let tableForm=document.getElementById("tableForm")
+tableForm.addEventListener('submit',removeItem)
+function removeItem(event){
+    let index;
+    for(let i=0 ;i<cart.item.length;i++){
+        event.target[i].id="";
+    }
+    event.preventDefault();
+    console.log(event);
+    let button=event.submitter;
+    button.id='removeButton';
+    for(let i=0 ;i<cart.item.length;i++){
+        let indexId=event.target[i].id;
+        if(indexId==button.id){
+            index=i
+            break;
+        }
+
+    }
+    removeFromCart(index);
+    refreshPage();
+}
+function removeFromCart(indexNum){
+    cart.item.splice(indexNum,1);
+    cart.saveCartInLocalStorage(cart.item);
+
+}
+>>>>>>> 6b7f7f71cb918dc5a61f7363a421b03fbdad9502
