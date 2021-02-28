@@ -80,14 +80,7 @@ function renderTable() {
     }
 }
 renderTable();
-<<<<<<< HEAD
 
-function refresh(){
-    cart.restoreCartItems();
-    renderTable();
-}
-refresh();
-=======
 let tableForm=document.getElementById("tableForm")
 tableForm.addEventListener('submit',removeItem)
 function removeItem(event){
@@ -115,4 +108,13 @@ function removeFromCart(indexNum){
     cart.saveCartInLocalStorage(cart.item);
 
 }
->>>>>>> 6b7f7f71cb918dc5a61f7363a421b03fbdad9502
+
+
+
+
+function refreshPage(){
+    cart.restoreCartItems();
+    table.textContent = '';
+
+    renderTable();
+}
