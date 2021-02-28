@@ -76,3 +76,6 @@ form{
     border: solid 1px black;
     width: 9%;   
 }
+table {
+    text-align: center;
+}
