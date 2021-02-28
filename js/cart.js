@@ -5,7 +5,7 @@ let table = document.getElementById('cart');
 function renderTable() {
     let firstRow = document.createElement('tr');
     table.appendChild(firstRow);
-    for (let i = 0; i < 4; i++) {
+    for (let i = 0; i < 5; i++) {
         let th = document.createElement('th');
         firstRow.appendChild(th);
         switch (i) {
@@ -21,12 +21,14 @@ function renderTable() {
             case 3:
                 th.textContent = 'price'
                 break;
+            case 4:
+                th.textContent='quantity'
         }
     }
     for (let i = 0; i < cart.item.length; i++) {
         let itemsRow = document.createElement('tr');
         table.appendChild(itemsRow);
-        for (let j = 0; j < 4; j++) {
+        for (let j = 0; j < 5; j++) {
             let td = document.createElement('td');
             itemsRow.appendChild(td);
             switch (j) {
@@ -45,6 +47,11 @@ function renderTable() {
                 case 3:
                     td.textContent = 'price'
                     break;
+                case 4:
+                    let btu2 = document.createElement('input');
+                    td.appendChild(btu2);
+                    btu2.setAttribute('type', 'number');
+            //         btu.setAttribute('lab, 'remove');
             }
         }
     }
@@ -73,3 +80,9 @@ function renderTable() {
     }
 }
 renderTable();
+
+function refresh(){
+    cart.restoreCartItems();
+    renderTable();
+}
+refresh();

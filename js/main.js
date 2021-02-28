@@ -100,6 +100,7 @@ function render(type) {
                     div.appendChild(classImg);
                     classImg.setAttribute('src', Product.allProducts[i].src);
                     break;
+                
             }
             // create a pragraph 
             let p = document.createElement('p');
@@ -110,6 +111,9 @@ function render(type) {
             div.appendChild(btu);
             btu.setAttribute('type', 'submit');
             btu.setAttribute('value', 'buy');
+
+
+
         }
     }
 }
