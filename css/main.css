@@ -1,0 +1,195 @@
+#logo{
+    font-family: 'Lobster', cursive;
+    color: #025955;
+    font-size: 40px;
+   margin-left: 30px;
+   margin-top: 50px;
+ }
+ .topnav {
+   background-color: rgb(250, 243, 243);
+   overflow: hidden;
+   margin-bottom: 30px;
+ }
+ /* Style the links inside the navigation bar */
+ .topnav a {
+   float: right;
+   color: #0c0c0c;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+ }
+ /* Change the color of links on hover */
+ .topnav a:hover {
+   background-color: #ddd;
+   color: black;
+ }
+ /* Add a color to the active/current link */
+ .topnav a.active {
+   background-color: #025955;
+   color: white;
+ }
+ #mySidenav{
+    position: absolute;
+    top: 50px;
+ }
+ #mySidenav a {
+    position: absolute;
+    left: -90px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 110px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+  }
+  #mySidenav a:hover {
+    left: 0;
+  }
+  
+  #books {
+    top: 20px;
+    background-color: #4CAF50;
+  }
+  
+  #tutorials {
+    top: 80px;
+    background-color: #2196F3;
+  }
+  
+  #classes {
+    top: 140px;
+    background-color: #f44336;
+  }
+  
+#itemsRenderType li{
+    display: inline-block;
+    
+}
+#itemsRenderType{
+    display: contents;
+    border: 1px solid black;
+    width: 75px;
+}
+#addToCart{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    align-content: space-between;
+    min-height:100vh;
+    justify-content:center;
+    align-items:center;
+    background:#F3F5FB;
+    overflow: scroll; 
+}
+#addToCart >div{
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    border-radius:10px;
+}
+#addToCart >div:nth-child(1n+10) {
+    flex-basis: 20%;
+ }
+#addToCart img{
+    width: 50%;
+    margin-left: 4%;
+    margin-top: 2%;
+    width:80px;
+    height:80px;
+    border-radius:50%;
+}
+#addToCart input{
+    width:100%;
+    padding:.8rem;
+    border:none;
+    background: linear-gradient(to right,#6789E4,#8182EF,#8F6DD5);
+    color:#fff;
+    border-radius:5px;
+    transition:.2s ease-in-out;
+    cursor:pointer;
+}
+#addToCart label{
+    width:10%;
+    /* margin-inline: 30px; */   
+}
+#addToCart>* {
+    flex: 1 1 160px;
+}
+#addTutorialToCart{
+    text-align: center; 
+    flex-basis: 33.33%;
+    position: relative;
+}
+#addToCar #addTutorialToCart {   
+    width: 70%;
+    text-align: center; 
+    flex-basis: 33.33%;
+    display: inline-flex;
+    flex-direction: row;
+}
+#addTutorialToCart iframe,
+#addTutorialToCart input{
+    width: 50%;
+    margin-left: 4%;
+    margin-top: 2%;  
+}
+#addTutorialToCart label{
+    width: min-content;
+    margin-left: 60%;
+    margin-top: 5px;
+    text-align: justify;
+    position: absolute;  
+}
+#addClasses{
+    box-sizing: border-box;
+    border: solid red;
+    width: 100%;
+    text-align: center; 
+}
+#addClasses img{
+    margin-left: auto;
+    border-radius: 10%;
+}
+#addClasses input{ 
+margin-left: auto;
+/* border-radius: 30%; */
+background-color: #444d44; /* Green */
+border: none;
+color: white;
+padding: 15px 5px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+}
+#addClasses label{
+    width:20%;
+    margin-top: 7px;
+    text-align: justify;
+    position: absolute;  
+}
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 20px;
+} 
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+} 
+::-webkit-scrollbar-thumb {
+    background: rgb(215, 52, 230); 
+    border-radius: 10px;
+} 
+::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+}
