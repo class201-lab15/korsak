@@ -1,4 +1,33 @@
-
+#logo{
+    font-family: 'Lobster', cursive;
+    color: #025955;
+    font-size: 40px;
+   margin-left: 30px;
+   margin-top: 50px;
+ }
+ .topnav {
+   background-color: rgb(250, 243, 243);
+   overflow: hidden;
+ }
+ /* Style the links inside the navigation bar */
+ .topnav a {
+   float: right;
+   color: #0c0c0c;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+ }
+ /* Change the color of links on hover */
+ .topnav a:hover {
+   background-color: #ddd;
+   color: black;
+ }
+ /* Add a color to the active/current link */
+ .topnav a.active {
+   background-color: #025955;
+   color: white;
+ }
 #itemsRenderType li{
     display: inline-block;
     
@@ -20,9 +49,7 @@
     background:#F3F5FB;
     overflow: scroll; 
 }
-
 #addToCart >div{
-    
     background-color: #f1f1f1;
     width: 100px;
     margin: 10px;
@@ -34,13 +61,10 @@
     align-items:center;
     flex-direction:column;
     border-radius:10px;
-   
-  
 }
 #addToCart >div:nth-child(1n+10) {
     flex-basis: 20%;
  }
-
 #addToCart img{
     width: 50%;
     margin-left: 4%;
@@ -48,7 +72,6 @@
     width:80px;
     height:80px;
     border-radius:50%;
-
 }
 #addToCart input{
     width:100%;
@@ -59,16 +82,11 @@
     border-radius:5px;
     transition:.2s ease-in-out;
     cursor:pointer;
-
 }
 #addToCart label{
     width:10%;
-    
-    /* margin-inline: 30px; */
-    
-    
+    /* margin-inline: 30px; */   
 }
-
 #addToCart>* {
     flex: 1 1 160px;
 }
@@ -77,43 +95,36 @@
     flex-basis: 33.33%;
     position: relative;
 }
-#addToCar #addTutorialToCart {
-    
+#addToCar #addTutorialToCart {   
     width: 70%;
     text-align: center; 
     flex-basis: 33.33%;
     display: inline-flex;
     flex-direction: row;
-  
 }
 #addTutorialToCart iframe,
 #addTutorialToCart input{
     width: 50%;
     margin-left: 4%;
-    margin-top: 2%;
-    
+    margin-top: 2%;  
 }
 #addTutorialToCart label{
     width: min-content;
     margin-left: 60%;
     margin-top: 5px;
     text-align: justify;
-    position: absolute;
-    
+    position: absolute;  
 }
 #addClasses{
     box-sizing: border-box;
     border: solid red;
     width: 100%;
     text-align: center; 
-
 }
 #addClasses img{
-margin-left: auto;
-border-radius: 10%;
-  
+    margin-left: auto;
+    border-radius: 10%;
 }
-
 #addClasses input{ 
 margin-left: auto;
 /* border-radius: 30%; */
@@ -125,31 +136,25 @@ text-align: center;
 text-decoration: none;
 display: inline-block;
 font-size: 20px;
-  
 }
-
 #addClasses label{
     width:20%;
     margin-top: 7px;
     text-align: justify;
-    position: absolute;
-    
+    position: absolute;  
 }
 /* scroll bar */
 ::-webkit-scrollbar {
     width: 20px;
-  }
-  
-  ::-webkit-scrollbar-track {
+} 
+::-webkit-scrollbar-track {
     box-shadow: inset 0 0 5px grey; 
     border-radius: 10px;
-  }
-   
-  ::-webkit-scrollbar-thumb {
+} 
+::-webkit-scrollbar-thumb {
     background: rgb(215, 52, 230); 
     border-radius: 10px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
+} 
+::-webkit-scrollbar-thumb:hover {
     background: #b30000; 
-  }
+}
