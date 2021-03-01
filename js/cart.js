@@ -115,6 +115,5 @@ function removeFromCart(indexNum){
 function refreshPage(){
     cart.restoreCartItems();
     table.textContent = '';
-
     renderTable();
 }

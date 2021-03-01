@@ -17,8 +17,14 @@ Product.allProducts = [];
 //////////////////////////////////////////////////////////////////////////////
 let book1 = new Product('headline', 'https://img.freepik.com/free-vector/geometric-leaflet-with-yellow-black-lines_1201-608.jpg?size=338&ext=jpg', 250, 'a book for head line', 'books');
 let book2 = new Product('annual report', 'https://img.freepik.com/free-vector/nice-wavy-blue-annual-report-business-brochure-design_1017-27437.jpg', 285, 'a book for annual report', 'books');
+let book3 = new Product('headline', 'https://img.freepik.com/free-vector/geometric-leaflet-with-yellow-black-lines_1201-608.jpg?size=338&ext=jpg', 250, 'a book for head line', 'books');
+let book4 = new Product('headline', 'https://img.freepik.com/free-vector/geometric-leaflet-with-yellow-black-lines_1201-608.jpg?size=338&ext=jpg', 250, 'a book for head line', 'books');
+let book5 = new Product('annual report', 'https://img.freepik.com/free-vector/nice-wavy-blue-annual-report-business-brochure-design_1017-27437.jpg', 285, 'a book for annual report', 'books');
+let book6 = new Product('headline', 'https://img.freepik.com/free-vector/geometric-leaflet-with-yellow-black-lines_1201-608.jpg?size=338&ext=jpg', 250, 'a book for head line', 'books');
+// let book7 = new Product('headline', 'https://img.freepik.com/free-vector/geometric-leaflet-with-yellow-black-lines_1201-608.jpg?size=338&ext=jpg', 250, 'a book for head line', 'books');
 let tutorial1 = new Product('JavaScript', 'https://www.youtube.com/embed/Qqx_wzMmFeA', 300, 'javascript tutorials for biggener', 'tutorials');
 let tutorial2 = new Product('JavaScript', 'https://www.youtube.com/embed/lhNdUVh3qCc', 320, 'javascript tutorials for biggener', 'tutorials');
+let tutorial3 = new Product('JavaScript', 'https://www.youtube.com/embed/lhNdUVh3qCc', 320, 'javascript tutorials for biggener', 'tutorials');
 let course1 = new Product('cooking', 'https://sattvikfoods.com/wp-content/uploads/2019/04/cooking.jpg', 400, 'a cooking online class', 'classes');
 let course2 = new Product('cooking', 'https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6f/32/03.jpg', 400, 'a cooking online class', 'classes');
 ////////////////////////////////////////////////////////////////////////////////
@@ -33,7 +39,7 @@ function add(event) {
     // no. of butttons counter
     let noOfBtu = 0;
     // empty the previous clicked button from id = clicked
-    for (let i = 0; i < form.childNodes.length; i++) {
+    for (let i = 0; i <form.childNodes.length; i++) {
         let div = form.childNodes[i];
         if (div.childNodes.length !== 0) {
             for (let j = 0; j < div.childNodes.length; j++) {
@@ -84,6 +90,7 @@ function render(type) {
                     let bookImg = document.createElement('img');
                     div.appendChild(bookImg);
                     bookImg.setAttribute('src', Product.allProducts[i].src);
+                    // bookImg.setAttribute('id','addToCart');
                     break;
                 case 'tutorials':
                     // create iframe for video
@@ -103,9 +110,9 @@ function render(type) {
                 
             }
             // create a pragraph 
-            let p = document.createElement('p');
-            div.appendChild(p);
-            p.textContent = Product.allProducts[i].discription;
+            let label = document.createElement('label');
+            div.appendChild(label);
+            label.textContent = Product.allProducts[i].discription;
             // create a button
             let btu = document.createElement('input');
             div.appendChild(btu);

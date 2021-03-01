@@ -2,9 +2,6 @@
 background-color: red;
 }
 
-body{
-    
-}
 
 .sources{
     box-sizing: border-box;
@@ -70,9 +67,48 @@ form{
     width: 82%;
     height: 86.5%;
     border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    overflow: scroll;
+
+
+   
 }
 #img{
     margin-top: 4%;
     border: solid 1px black;
     width: 9%;   
+}
+#addToCart >div{
+    
+    width: 70%;
+    text-align: center; 
+    flex-basis: 33.33%;
+    display: inline-flex;
+    /* justify-content: center; */
+    flex-direction: column;
+  
+}
+#addToCart >div:nth-child(1n+10) {
+    flex-basis: 20%;
+ }
+
+#addToCart img,
+#addToCart input{
+    width: 50%;
+    margin-left: 4%;
+    margin-top: 2%;
+    
+
+
+}
+#addToCart label{
+    width: fit-content;
+    margin-inline: 30px;
+    
+}
+
+#addToCart>* {
+    flex: 1 1 160px;
 }
