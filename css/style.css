@@ -4,6 +4,13 @@ background-color: red;
 
 body{
     
+}
+
+.sources{
+    box-sizing: border-box;
+    
+    
+
     margin-bottom: 100px;
     position: relative;
     margin-top: 20px;
@@ -68,4 +75,7 @@ form{
     margin-top: 4%;
     border: solid 1px black;
     width: 9%;   
+}
+table {
+    text-align: center;
 }

@@ -1,5 +1,5 @@
 body{
-    background-color: blueviolet;
+    background-color: #908d84;
 }
 #header ul li{
     
@@ -7,11 +7,11 @@ body{
     padding: 10px 10px 10px 10px;
     margin-top: 7px;
     font-size: 20px;
+    font-weight: bold;
     
 }
 #header{
-    background-color: burlywood;
-
+    background-color:lightgray;
     height:50px;
 
 }
@@ -20,33 +20,63 @@ body{
     margin-left:34%;
    
 }
+#link a{
+    color: black; 
+    text-decoration: none;
+}
 #link{
-        margin-left:40%;    
+        margin-left:40%; 
+          
 }
 #logo{
     margin-left: 1.5%;
 }  
+#logo::first-letter{
+    color: red;
+}
 #link a:hover{
-   background-color: cornsilk;
-   color: black; 
+    background-color:red;
+    color:rgb(255, 255, 255);
     text-decoration: none;
 }  
-div{
+form{
     border: 1px solid black;
-    width: 45%;
-    max-height: 50%;
-    margin-left: 28%;
-    overflow: scroll;
+    width: 70%;
+    height: 601px;
+    margin-left: 2%;
+    margin-top: 30px;
+    overflow-y:scroll ;
+
 }
-button{
+/* #submit{
     margin-left: 90%;
     position: relative;
     bottom: 95px;
     left: -80px;
     padding: 10px 10px 10px 10px;
-    background-color: cadetblue;
+    background-color: #58ced4;
+    border-radius: 14px; 
     
 }
-button:hover{
-    text-shadow: 2px 2px 60px red;
+#submit:hover{
+    text-shadow:2px 2px 4px #be0202; */
+    
+
+table{
+    margin: 0% 1% 2% 1% ;
+
+}
+tr{
+    border-bottom: black 1px solid;
+}
+td{
+    padding: 10px;
+}
+.butt{
+    margin-top: 60px;
+}
+.imag{
+    position: relative;
+    top: 1%;
+    left: 2%;
 }
