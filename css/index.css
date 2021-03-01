@@ -1,0 +1,195 @@
+html{
+    background-color: #cb0425;
+}
+.container{
+    
+  
+}
+.img{
+    width: 100%;
+    height: 500px;
+
+}
+.nav{
+    float: right;
+    padding: 5px;
+    padding-top: 13px;
+  
+}
+.nav a:hover{
+    background-color:red;
+    color:rgb(255, 255, 255);
+
+}
+a{
+    text-decoration: none;
+    font-size: large;
+    padding-inline: 20px;
+    color: black;
+    font-weight: bold;
+}
+.logo{
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 30px;
+    background-color:#4C5452;
+    padding-left: 10px;
+
+
+}
+.logo::first-letter{
+    color: red;
+ }
+.circle1{
+    
+    height:250px;
+    width: 250px;
+    border-radius: 50% ;
+    background-color: rgb(2, 2, 2);
+    margin-left: 0px;
+    top: 0px;
+    position: absolute;
+    background-image: url(../img/csss.jpg);
+    background-repeat: no-repeat;
+  /* background-size: cover; */
+  background-position: center;
+  background-size: 120px;
+
+
+}
+.circle2{
+    height:300px;
+    width: 300px;
+    border-radius: 50% ;
+    background-color: lightgray;
+    float:right;
+    margin-top: 80px;
+    position: absolute;
+    top: -50px;
+    right: 100px;
+    background-image: url(../img/_115333961_gettyimages-1218813156.jpg);
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* background-size: 120px; */
+}
+
+.circle3{
+    height:400px;
+    width: 400px;
+    border-radius: 50% ;
+    background-color: rgb(6, 27, 73);
+    position: absolute;
+    top: 300px;
+    left: 90px;
+}
+iframe{
+    height:400px;
+    width: 400px;
+    border-radius: 50% ;
+    /* margin-top: 90px;
+    margin-left: 50px; */
+}
+video {
+    width: 190px;
+    height: 200px;
+   position: relative;
+  left: 230px;
+  top: 30px;
+  }
+
+  
+  
+.part2{
+    position: relative;
+  
+}
+button{
+    left: 800px;
+    /* position: absolute;
+    top: 600px;
+    font-size: 24px;
+    padding: 32px 50px; */
+
+}
+
+
+.flip-box {
+    background-color: transparent;
+    height:250px;
+    width: 250px;
+    border-radius: 50% ;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    /* position: relative; */
+    height:250px;
+    width: 250px;
+    border-radius: 50% ;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    border-radius: 50% ;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+
+
+
+
+
+
+  /* ///////////////////////////////// */
+
+
+  /* .flip-box1 {
+    background-color: transparent;
+    height:200px;
+    width: 200px;
+    border-radius: 50% ;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner1 {
+    /* position: relative; */
+    height:200px;
+    width: 200px;
+    border-radius: 50% ;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+ 
+  

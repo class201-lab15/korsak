@@ -8,7 +8,7 @@ let Product = function (name, src, price, discription, productType) {
     this.name = name;
     this.src = src;
     this.price = price;
-    this.discription = discription;
+    this.discription = discription
     this.productType = productType;
     Product.allProducts.push(this);
 }
@@ -18,9 +18,9 @@ Product.allProducts = [];
 let book1 = new Product('headline', 'https://img.freepik.com/free-vector/geometric-leaflet-with-yellow-black-lines_1201-608.jpg?size=338&ext=jpg', 250, 'a book for head line', 'books');
 let book2 = new Product('annual report', 'https://img.freepik.com/free-vector/nice-wavy-blue-annual-report-business-brochure-design_1017-27437.jpg', 285, 'a book for annual report', 'books');
 let tutorial1 = new Product('JavaScript', 'https://www.youtube.com/embed/Qqx_wzMmFeA', 300, 'javascript tutorials for biggener', 'tutorials');
-let tutorial2 = new Product('JavaScript', 'https://www.youtube.com/embed/lhNdUVh3qCc', 320, 'javascript tutorials for biggener', 'tutorials');
+let tutorial2 = new Product('JavaScript2', 'https://www.youtube.com/embed/lhNdUVh3qCc', 320, 'javascript tutorials for biggener', 'tutorials');
 let course1 = new Product('cooking', 'https://sattvikfoods.com/wp-content/uploads/2019/04/cooking.jpg', 400, 'a cooking online class', 'classes');
-let course2 = new Product('cooking', 'https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6f/32/03.jpg', 400, 'a cooking online class', 'classes');
+let course2 = new Product('cooking2', 'https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6f/32/03.jpg', 400, 'a cooking online class', 'classes');
 ////////////////////////////////////////////////////////////////////////////////
 // add a listner to the form and ul-form elements
 let form = document.getElementById('addToCart');
@@ -62,28 +62,24 @@ function add(event) {
 }
 function addToTheCart(index) {
     // put the selected item in cart and save it in local storage
-    if(localStorage.getItem("cart") !== null){
-      let indname=renderedItems[index].name;
-      console.log(indname);
-      let a=localStorage.getItem("cart");
-      let savedItems =JSON.parse(a)
-     console.log(savedItems);
-
-       for(let i=0;i<savedItems.length;i++){
-           if(indname===savedItems[i].name){
-                alert("Book is already exist");
+    if (JSON.parse(localStorage.getItem('cart')).length == 0) {
+        cart.item.push(renderedItems[index]);
+        cart.saveCartInLocalStorage(cart.item);
+    } else if (localStorage.getItem('cart') !== null){
+        let savedItems = JSON.parse(localStorage.getItem('cart'));
+        for (let i = 0; i < savedItems.length; i++){
+            if (savedItems[i].name == renderedItems[index].name){
+                alert('the item was allready added to the cart, you can to quantity in cart page');
                 break;
-           }else{
-               
-            cart.item.push(renderedItems[index]);
-            cart.saveCartInLocalStorage(cart.item);
-           }
-       }
-
-    }else{
-    cart.item.push(renderedItems[index]);
-    cart.saveCartInLocalStorage(cart.item);}
-    
+            } else if (i == savedItems.length-1){
+                cart.item.push(renderedItems[index]);
+                cart.saveCartInLocalStorage(cart.item);
+            }
+        }
+    } else {
+        cart.item.push(renderedItems[index]);
+        cart.saveCartInLocalStorage(cart.item);
+    }
 }
 function render(type) {
     // remove the previous type rendered products 
@@ -120,6 +116,7 @@ function render(type) {
                     div.appendChild(classImg);
                     classImg.setAttribute('src', Product.allProducts[i].src);
                     break;
+                
             }
             // create a pragraph 
             let p = document.createElement('p');

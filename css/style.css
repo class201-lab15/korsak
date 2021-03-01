@@ -1,6 +1,81 @@
 #clicked:hover {
 background-color: red;
 }
-.play{
+
+body{
     
+}
+
+.sources{
+    box-sizing: border-box;
+    
+    
+
+    margin-bottom: 100px;
+    position: relative;
+    margin-top: 20px;
+}
+#header ul li{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px 10px 10px 10px;
+    margin-top: 7px;
+}
+#header{
+    border: 1px solid black;
+    height:50px;
+
+}
+#header ul{
+    padding: 0px;
+}
+#home{
+    margin-left:28%;
+}
+#link{
+    margin-left:23%;
+}
+#logo{
+    margin-left: 1.5%;
+}
+#itemsRenderType li{
+    display: inline-block;
+    
+}
+#itemsRenderType{
+padding-bottom: 12%;
+    border: 1px solid black;
+    width: 75px;
+}
+#books{
+margin-left:  22%;
+margin-top: 133%;  
+}
+#tutorials{
+    margin-left:  10%;
+    margin-top: 133%;
+}
+#classes{
+    margin-left:  12%;
+    margin-top: 133%;
+
+}
+form{
+    display:inline-block;
+}
+#addToCart{
+    position: absolute;
+    right: 34px;
+    top: 86px;
+    width: 82%;
+    height: 86.5%;
+    border: 1px solid black;
+}
+#img{
+    margin-top: 4%;
+    border: solid 1px black;
+    width: 9%;   
+}
+table {
+    text-align: center;
 }

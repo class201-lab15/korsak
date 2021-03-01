@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>korsak main</title>
 </head>
 <body>
-    <nav>
+    <nav id="header">
         <ul>
-            <li>logo</li>
-            <li>home</li>
-            <li><a href="cart.html">cart</a></li>
+            <li id="logo">logo</li>
+            <li  id="home">home</li>
+            <li  id="link"><a href="cart.html">cart</a></li>
         </ul>
     </nav>
     <nav>
         <ul>
             <form action="" id="itemsRenderType">
+
                 <li><input type="submit" value="books" id="books"></li>
+               
                 <li><input type="submit" value="tutorials" id="tutorials"></li>
                 <li><input type="submit" value="classes" id="classes"></li>
             </form>
         </ul>
     </nav>
-    <form action="" id="addToCart" style="height: 300px;width: 300px;border: solid;">
-        
+    <form action="" id="addToCart" >
+  
     </form>
-    <script src="js/app.js"></script>
-    <script src="js/main.js"></script>
+    <img id="img"src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Open_book_nae_02.svg/375px-Open_book_nae_02.svg.png" height="175">
+<script src="js/app.js"></script>  
+<script src="js/main.js"></script>  
 </body>
+
 </html>
