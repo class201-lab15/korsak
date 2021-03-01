@@ -62,8 +62,28 @@ function add(event) {
 }
 function addToTheCart(index) {
     // put the selected item in cart and save it in local storage
+    if(localStorage.getItem("cart") !== null){
+      let indname=renderedItems[index].name;
+      console.log(indname);
+      let a=localStorage.getItem("cart");
+      let savedItems =JSON.parse(a)
+     console.log(savedItems);
+
+       for(let i=0;i<savedItems.length;i++){
+           if(indname===savedItems[i].name){
+                alert("Book is already exist");
+                break;
+           }else{
+               
+            cart.item.push(renderedItems[index]);
+            cart.saveCartInLocalStorage(cart.item);
+           }
+       }
+
+    }else{
     cart.item.push(renderedItems[index]);
-    cart.saveCartInLocalStorage(cart.item);
+    cart.saveCartInLocalStorage(cart.item);}
+    
 }
 function render(type) {
     // remove the previous type rendered products 
