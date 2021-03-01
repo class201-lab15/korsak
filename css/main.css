@@ -8,6 +8,7 @@
  .topnav {
    background-color: rgb(250, 243, 243);
    overflow: hidden;
+   margin-bottom: 30px;
  }
  /* Style the links inside the navigation bar */
  .topnav a {
@@ -28,6 +29,40 @@
    background-color: #025955;
    color: white;
  }
+ #mySidenav{
+    position: absolute;
+    top: 50px;
+ }
+ #mySidenav a {
+    position: absolute;
+    left: -90px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 110px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+  }
+  #mySidenav a:hover {
+    left: 0;
+  }
+  
+  #books {
+    top: 20px;
+    background-color: #4CAF50;
+  }
+  
+  #tutorials {
+    top: 80px;
+    background-color: #2196F3;
+  }
+  
+  #classes {
+    top: 140px;
+    background-color: #f44336;
+  }
+  
 #itemsRenderType li{
     display: inline-block;
     

@@ -34,8 +34,12 @@ let course2 = new Product('cooking2', 'https://sparkbox.com/uploads/featured_ima
 // add a listner to the form and ul-form elements
 let form = document.getElementById('addToCart');
 form.addEventListener('submit', add);
-let ulForm = document.getElementById('itemsRenderType');
-ulForm.addEventListener('submit', renderItemofTheType)
+let books = document.getElementById('books');
+let tutorials = document.getElementById('tutorials');
+let classes = document.getElementById('classes');
+books.addEventListener('click',linktype);
+tutorials.addEventListener('click',linktype);
+classes.addEventListener('click',linktype);
 // TO DO when a button is clicked in the form
 function add(event) {
     event.preventDefault();
@@ -145,10 +149,11 @@ function render(type) {
         }
     }
 }
-function renderItemofTheType(event) {
+function linktype(event) {
     event.preventDefault();
     // define the type for the new rendering products
-    let productsType = event.submitter.id;
+    let productsType = event.path[0].id;
+    console.log(productsType);
     render(productsType);
 }
 function removeRendered() {
@@ -195,5 +200,3 @@ function playTheVideo(event) {
 }
 render('books');
 cart.restoreCartItems();
-
-
