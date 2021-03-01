@@ -1,65 +1,81 @@
 #clicked:hover {
 background-color: red;
 }
-.play{
+
+body{
     
 }
-nav {
-    border: solid;
-    height: 50px;
+
+.sources{
+    box-sizing: border-box;
+    
+    
+
+    margin-bottom: 100px;
+    position: relative;
+    margin-top: 20px;
 }
-body {
-    margin-left: 250px;
-    margin-right: 250px;
+#header ul li{
+    display: inline-block;
+    border: 1px solid black;
+    padding: 10px 10px 10px 10px;
+    margin-top: 7px;
 }
-nav ul li{
-    display: inline;
-    border: solid;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-top: 5px;
-    padding-right: 15px;
-    padding-left: 15px;
-   
+#header{
+    border: 1px solid black;
+    height:50px;
+
+}
+#header ul{
+    padding: 0px;
+}
+#home{
+    margin-left:28%;
+}
+#link{
+    margin-left:23%;
 }
 #logo{
+    margin-left: 1.5%;
+}
+#itemsRenderType li{
+    display: inline-block;
+    
+}
+#itemsRenderType{
+padding-bottom: 12%;
+    border: 1px solid black;
+    width: 75px;
+}
+#books{
+margin-left:  22%;
+margin-top: 133%;  
+}
+#tutorials{
+    margin-left:  10%;
+    margin-top: 133%;
+}
+#classes{
+    margin-left:  12%;
+    margin-top: 133%;
+
+}
+form{
+    display:inline-block;
+}
+#addToCart{
     position: absolute;
-    top: 0px;
-    left: 5px;
+    right: 34px;
+    top: 86px;
+    width: 82%;
+    height: 86.5%;
+    border: 1px solid black;
 }
-#home {
-    position: absolute;
-    top: 0px;
-    right: 5px;
+#img{
+    margin-top: 4%;
+    border: solid 1px black;
+    width: 9%;   
 }
-ul {
-    position: relative;    
-}
-#topSec {
-    margin-top: 15px;
-    height: 40%;
-    border: solid;
-}
-#botSec {
-    margin-top: 15px;
-    border: solid;
-}
-.left {
-    width: 80%;
-    margin-top: 20px;
-    position: absolute;
-    left:20px;
-    height: 200px;
-}
-.right {
-    width: 80%;
-    margin-top: 20px;
-    position: absolute;
-    right:20px;
-    height: 200px;
-}
-.divSec {
-    position: relative;
-    width: 100%;
-    border: solid;
+table {
+    text-align: center;
 }
