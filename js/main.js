@@ -62,7 +62,6 @@ function add(event) {
 }
 function addToTheCart(index) {
     // put the selected item in cart and save it in local storage
-    console.log(localStorage.getItem('cart'));
     if (localStorage.getItem('cart') === null) {
         cart.item.push(renderedItems[index]);
         cart.saveCartInLocalStorage(cart.item);
