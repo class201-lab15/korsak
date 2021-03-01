@@ -1,114 +1,157 @@
-#clicked:hover {
-background-color: red;
-}
 
-
-.sources{
-    box-sizing: border-box;
-    
-    
-
-    margin-bottom: 100px;
-    position: relative;
-    margin-top: 20px;
-}
-#header ul li{
-    display: inline-block;
-    border: 1px solid black;
-    padding: 10px 10px 10px 10px;
-    margin-top: 7px;
-}
-#header{
-    border: 1px solid black;
-    height:50px;
-
-}
-#header ul{
-    padding: 0px;
-}
-#home{
-    margin-left:28%;
-}
-#link{
-    margin-left:23%;
-}
-#logo{
-    margin-left: 1.5%;
-}
 #itemsRenderType li{
     display: inline-block;
     
 }
 #itemsRenderType{
-padding-bottom: 12%;
+    display: contents;
     border: 1px solid black;
     width: 75px;
 }
-#books{
-margin-left:  22%;
-margin-top: 133%;  
-}
-#tutorials{
-    margin-left:  10%;
-    margin-top: 133%;
-}
-#classes{
-    margin-left:  12%;
-    margin-top: 133%;
-
-}
-form{
-    display:inline-block;
-}
 #addToCart{
-    position: absolute;
-    right: 34px;
-    top: 86px;
-    width: 82%;
-    height: 86.5%;
-    border: 1px solid black;
+    width: 80%;
     display: flex;
+    margin: auto;
     flex-wrap: wrap;
-    box-sizing: border-box;
-    overflow: scroll;
-
-
-   
+    align-content: space-between;
+    min-height:100vh;
+    justify-content:center;
+    align-items:center;
+    background:#F3F5FB;
+    overflow: scroll; 
 }
-#img{
-    margin-top: 4%;
-    border: solid 1px black;
-    width: 9%;   
-}
+
 #addToCart >div{
     
-    width: 70%;
-    text-align: center; 
-    flex-basis: 33.33%;
-    display: inline-flex;
-    /* justify-content: center; */
-    flex-direction: column;
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    border-radius:10px;
+   
   
 }
 #addToCart >div:nth-child(1n+10) {
     flex-basis: 20%;
  }
 
-#addToCart img,
-#addToCart input{
+#addToCart img{
     width: 50%;
     margin-left: 4%;
     margin-top: 2%;
-    
+    width:80px;
+    height:80px;
+    border-radius:50%;
 
+}
+#addToCart input{
+    width:100%;
+    padding:.8rem;
+    border:none;
+    background: linear-gradient(to right,#6789E4,#8182EF,#8F6DD5);
+    color:#fff;
+    border-radius:5px;
+    transition:.2s ease-in-out;
+    cursor:pointer;
 
 }
 #addToCart label{
-    width: fit-content;
-    margin-inline: 30px;
+    width:10%;
+    
+    /* margin-inline: 30px; */
+    
     
 }
 
 #addToCart>* {
     flex: 1 1 160px;
 }
+#addTutorialToCart{
+    text-align: center; 
+    flex-basis: 33.33%;
+    position: relative;
+}
+#addToCar #addTutorialToCart {
+    
+    width: 70%;
+    text-align: center; 
+    flex-basis: 33.33%;
+    display: inline-flex;
+    flex-direction: row;
+  
+}
+#addTutorialToCart iframe,
+#addTutorialToCart input{
+    width: 50%;
+    margin-left: 4%;
+    margin-top: 2%;
+    
+}
+#addTutorialToCart label{
+    width: min-content;
+    margin-left: 60%;
+    margin-top: 5px;
+    text-align: justify;
+    position: absolute;
+    
+}
+#addClasses{
+    box-sizing: border-box;
+    border: solid red;
+    width: 100%;
+    text-align: center; 
+
+}
+#addClasses img{
+margin-left: auto;
+border-radius: 10%;
+  
+}
+
+#addClasses input{ 
+margin-left: auto;
+/* border-radius: 30%; */
+background-color: #444d44; /* Green */
+border: none;
+color: white;
+padding: 15px 5px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 20px;
+  
+}
+
+#addClasses label{
+    width:20%;
+    margin-top: 7px;
+    text-align: justify;
+    position: absolute;
+    
+}
+/* scroll bar */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  ::-webkit-scrollbar-thumb {
+    background: rgb(215, 52, 230); 
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+
+/* /////////////////////////////////// */
