@@ -60,6 +60,17 @@ td{
   width: 100px;
   
 }
+.scrolling{
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  line-height: 100px;
+}
+p{
+  line-height:1.5;
+  display: inline-block;
+  vertical-align: middle;
+}
 img,iframe {
   max-width: 100%;
   max-height: 100%;
