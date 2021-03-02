@@ -1,80 +1,32 @@
-#clicked:hover {
-background-color: red;
-}
-
-body{
-    
-}
-
-.sources{
-    box-sizing: border-box;
-    margin-bottom: 100px;
-    position: relative;
-    margin-top: 20px;
-}
-#header ul li{
-    display: inline-block;
-    border: 1px solid black;
-    padding: 10px 10px 10px 10px;
-    margin-top: 7px;
-}
-#header{
-    border: 1px solid black;
-    height:50px;
-
-}
-#header ul{
-    padding: 0px;
-}
-#home{
-    margin-left:28%;
-}
-#link{
-    margin-left:23%;
-}
 #logo{
-    margin-left: 1.5%;
+  font-family: 'Lobster', cursive;
+  color: #025955;
+  font-size: 40px;
+ margin-left: 30px;
+ margin-top: 50px;
 }
-#itemsRenderType li{
-    display: inline-block;
-    
+.topnav {
+ background-color: rgb(250, 243, 243);
+ overflow: hidden;
 }
-#itemsRenderType{
-padding-bottom: 12%;
-    border: 1px solid black;
-    width: 75px;
+/* Style the links inside the navigation bar */
+.topnav a {
+ float: right;
+ color: #0c0c0c;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
 }
-#books{
-margin-left:  22%;
-margin-top: 133%;  
+/* Change the color of links on hover */
+.topnav a:hover {
+ background-color: #ddd;
+ color: black;
 }
-#tutorials{
-    margin-left:  10%;
-    margin-top: 133%;
-}
-#classes{
-    margin-left:  12%;
-    margin-top: 133%;
-
-}
-form{
-    display:inline-block;
-}
-#addToCart{
-    position: absolute;
-    right: 34px;
-    top: 86px;
-    width: 82%;
-    height: 86.5%;
-    border: 1px solid black;
-}
-#img{
-    margin-top: 4%;
-    border: solid 1px black;
-    width: 9%;   
-}
-table {
-    text-align: center;
+/* Add a color to the active/current link */
+.topnav a.active {
+ background-color: #025955;
+ color: white;
 }
 #TopSec {
     margin-top: 25px; 
@@ -137,3 +89,4 @@ table {
     color: white;
     transform: rotateY(180deg);
   }
+  

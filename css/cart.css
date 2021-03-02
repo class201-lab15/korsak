@@ -1,82 +1,30 @@
-body{
-    background-color: #908d84;
-}
-#header ul li{
-    
-    display: inline-block;
-    padding: 10px 10px 10px 10px;
-    margin-top: 7px;
-    font-size: 20px;
-    font-weight: bold;
-    
-}
-#header{
-    background-color:lightgray;
-    height:50px;
-
-}
-
-#cartt{
-    margin-left:34%;
-   
-}
-#link a{
-    color: black; 
-    text-decoration: none;
-}
-#link{
-        margin-left:40%; 
-          
-}
 #logo{
-    margin-left: 1.5%;
-}  
-#logo::first-letter{
-    color: red;
-}
-#link a:hover{
-    background-color:red;
-    color:rgb(255, 255, 255);
-    text-decoration: none;
-}  
-form{
-    border: 1px solid black;
-    width: 70%;
-    height: 601px;
-    margin-left: 2%;
-    margin-top: 30px;
-    overflow-y:scroll ;
-
-}
-/* #submit{
-    margin-left: 90%;
-    position: relative;
-    bottom: 95px;
-    left: -80px;
-    padding: 10px 10px 10px 10px;
-    background-color: #58ced4;
-    border-radius: 14px; 
-    
-}
-#submit:hover{
-    text-shadow:2px 2px 4px #be0202; */
-    
-
-table{
-    margin: 0% 1% 2% 1% ;
-
-}
-tr{
-    border-bottom: black 1px solid;
-}
-td{
-    padding: 10px;
-}
-.butt{
-    margin-top: 60px;
-}
-.imag{
-    position: relative;
-    top: 1%;
-    left: 2%;
-}
+    font-family: 'Lobster', cursive;
+    color: #025955;
+    font-size: 40px;
+   margin-left: 30px;
+   margin-top: 50px;
+ }
+ .topnav {
+   background-color: rgb(250, 243, 243);
+   overflow: hidden;
+ }
+ /* Style the links inside the navigation bar */
+ .topnav a {
+   float: right;
+   color: #0c0c0c;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+ }
+ /* Change the color of links on hover */
+ .topnav a:hover {
+   background-color: #ddd;
+   color: black;
+ }
+ /* Add a color to the active/current link */
+ .topnav a.active {
+   background-color: #025955;
+   color: white;
+ }
