@@ -62,6 +62,25 @@
     top: 140px;
     background-color: #f44336;
   }
+  #mySidenav a i{
+      position: absolute;
+      right: 22px;
+  }
+
+
+/*   
+  #mySidenav:hover #icon1 {
+    display:none;
+ }
+
+ #mySidenav:hover #icon2 {
+    display:none;
+ }
+  
+ #mySidenav:hover #icon3 {
+    display:none;
+ } */
+  
   
 #itemsRenderType li{
     display: inline-block;

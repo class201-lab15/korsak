@@ -38,11 +38,12 @@ function renderTable() {
             itemsRow.appendChild(td);
             switch (j) {
                 case 0:
-                    let btu = document.createElement('input');
+                    let btu = document.createElement('button');
                     td.appendChild(btu);
-                    btu.setAttribute('type', 'submit');
-                    btu.setAttribute('value', 'remove');
+                    // btu.setAttribute('type', 'submit');
+                    // btu.setAttribute('value', 'remove');
                     btu.setAttribute('class', 'button')
+                    btu.innerHTML = '<i class="fas fa-trash-alt"></i>';
                     break;
                 case 1:
                     renderItem(td, i);
