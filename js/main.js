@@ -63,6 +63,7 @@ function add(event) {
 function addToTheCart(index) {
     // put the selected item in cart and save it in local storage
     if (localStorage.getItem('cart') == null) {
+    if (localStorage.getItem('cart') === null) {
         cart.item.push(renderedItems[index]);
         cart.saveCartInLocalStorage(cart.item);
     } else if (JSON.parse(localStorage.getItem('cart')).length !== 0){
