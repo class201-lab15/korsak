@@ -1,37 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
     <title>korsak main</title>
 </head>
+
 <body>
-    <nav id="header">
-        <ul>
-            <li id="logo">logo</li>
-            <li  id="home">home</li>
-            <li  id="link"><a href="cart.html">cart</a></li>
-        </ul>
-    </nav>
-    <nav>
-        <ul>
-            <form action="" id="itemsRenderType">
+    <div class="topnav">
+        <label id="logo">Korsak</label>
+        <a href="index.html">Home</a>
+        <a href="cart.html">cart <span id="cartCounter"></span></a>
+        <a class="active" href="#">Purchse</a>
+    </div>
 
-                <li><input type="submit" value="books" id="books"></li>
-               
-                <li><input type="submit" value="tutorials" id="tutorials"></li>
-                <li><input type="submit" value="classes" id="classes"></li>
-            </form>
-        </ul>
-    </nav>
-    <form action="" id="addToCart" >
-        
-  
+    <div id="mySidenav" class="sidenav">
+        <a href="#" id="books">books</a>
+        <a href="#" id="tutorials">tutorials</a>
+        <a href="#" id="classes">classes</a>
+    </div>
+    <form action="" id="addToCart">
     </form>
-
-    
-<script src="js/app.js"></script>  
-<script src="js/main.js"></script>  
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

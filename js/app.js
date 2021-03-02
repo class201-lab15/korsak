@@ -13,34 +13,16 @@ Cart.prototype.restoreCartItems = function (){
         cart.item = JSON.parse(localStorage.getItem('cart'));
     }
 }
-// let slideIndex = 0;
-// carousel();
-// function carousel() {
-//   let i;
-//   let x = document.getElementsByClassName("img");
-//   for (i = 0; i < x.length; i++) {
-//    x[i].style.display = "none";
+// window.onscroll = function() {myFunction()};
+// // Get the navbar
+// let navbar = document.getElementsByClassName("topnav")
+// // Get the offset position of the navbar
+// let sticky = navbar.offsetTop;
+// // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+// function myFunction() {
+//   if (window.pageYOffset >= sticky) {
+//     navbar.classList.add("sticky")
+//   } else {
+//     navbar.classList.remove("sticky");
 //   }
-//  slideIndex++;
-//   if (slideIndex > x.length) {slideIndex = 1}
-//   x[slideIndex-1].style.display = "block";
-//   setTimeout(carousel, 2000); // Change image every 2 seconds
-// }
-
-/////////////////
-// let randmoizer = document.getElementById('video');
-
-
-// randmoizer.addEventListener('click',randmoizer);
-
-// function randomize(event) {
-//     let videoElement =document.getElementById('video');
-
-//     videoElement.volume=Math.random();
-//     // 0=>1
-//     // 0.0 =>1.0
-    
-//     console.log(videoElement.volume);
-   
-    
 // }

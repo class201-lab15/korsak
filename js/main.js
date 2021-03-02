@@ -24,19 +24,22 @@ let book6 = new Product('headline', 'https://img.freepik.com/free-vector/geometr
 let book7 = new Product('headline', 'https://img.freepik.com/free-vector/geometric-leaflet-with-yellow-black-lines_1201-608.jpg?size=338&ext=jpg', 250, 'a book for head line', 'books');
 let book8 = new Product('headline', 'https://img.freepik.com/free-vector/geometric-leaflet-with-yellow-black-lines_1201-608.jpg?size=338&ext=jpg', 250, 'a book for head line', 'books');
 let book9 = new Product('headline', 'https://img.freepik.com/free-vector/geometric-leaflet-with-yellow-black-lines_1201-608.jpg?size=338&ext=jpg', 250, 'a book for head line', 'books');
-
-let tutorial1 = new Product('JavaScript', 'https://www.youtube.com/embed/Qqx_wzMmFeA', 300, 'javascript tutorials for biggener', 'tutorials');
-let tutorial2 = new Product('JavaScript', 'https://www.youtube.com/embed/lhNdUVh3qCc', 320, 'javascript tutorials for biggener', 'tutorials');
-let tutorial3 = new Product('JavaScript', 'https://www.youtube.com/embed/lhNdUVh3qCc', 320, 'javascript tutorials for biggener', 'tutorials');
-let tutorial4 = new Product('JavaScript', 'https://www.youtube.com/embed/lhNdUVh3qCc', 320, 'javascript tutorials for biggener', 'tutorials');
+let tutorial1 = new Product('JavaScript1', 'https://www.youtube.com/embed/Qqx_wzMmFeA', 300, 'javascript tutorials for biggener', 'tutorials');
+let tutorial2 = new Product('JavaScript2', 'https://www.youtube.com/embed/lhNdUVh3qCc', 320, 'javascript tutorials for biggener', 'tutorials');
+let tutorial3 = new Product('JavaScript3', 'https://www.youtube.com/embed/lhNdUVh3qCc', 320, 'javascript tutorials for biggener', 'tutorials');
+let tutorial4 = new Product('JavaScript4', 'https://www.youtube.com/embed/lhNdUVh3qCc', 320, 'javascript tutorials for biggener', 'tutorials');
 let course1 = new Product('cooking', 'http://img.pgc.in.goldenmob.com/img/5aa4a740dd4a11ea8af7adb8a77d6017/af457e6a05ea35940819d92325c0625d-480.jpg', 400, 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic ', 'classes');
 let course2 = new Product('cooking2', 'https://sparkbox.com/uploads/featured_images/p-zatrow_20-07.png', 400, 'a cooking online class', 'classes');
 ////////////////////////////////////////////////////////////////////////////////
 // add a listner to the form and ul-form elements
 let form = document.getElementById('addToCart');
 form.addEventListener('submit', add);
-let ulForm = document.getElementById('itemsRenderType');
-ulForm.addEventListener('submit', renderItemofTheType)
+let books = document.getElementById('books');
+let tutorials = document.getElementById('tutorials');
+let classes = document.getElementById('classes');
+books.addEventListener('click',linktype);
+tutorials.addEventListener('click',linktype);
+classes.addEventListener('click',linktype);
 // TO DO when a button is clicked in the form
 function add(event) {
     event.preventDefault();
@@ -72,10 +75,10 @@ function add(event) {
 }
 function addToTheCart(index) {
     // put the selected item in cart and save it in local storage
-    if (JSON.parse(localStorage.getItem('cart')).length == 0) {
+    if (localStorage.getItem('cart') === null) {
         cart.item.push(renderedItems[index]);
         cart.saveCartInLocalStorage(cart.item);
-    } else if (localStorage.getItem('cart') !== null){
+    } else if (JSON.parse(localStorage.getItem('cart')).length !== 0){
         let savedItems = JSON.parse(localStorage.getItem('cart'));
         for (let i = 0; i < savedItems.length; i++){
             if (savedItems[i].name == renderedItems[index].name){
@@ -98,8 +101,9 @@ function render(type) {
     renderedItems = [];
     // show the new type renderd products
     for (let i = 0; i < numberOfallProducts; i++) {
-        console.log(Product.allProducts[i].productType);
+        let counterForAddingListner = 0;
         if (Product.allProducts[i].productType == type) {
+            counterForAddingListner++;
             // first fill the new renderd item in the the following array
             renderedItems.push(Product.allProducts[i]);
             // second create a div to fill it by the product properties
@@ -119,10 +123,11 @@ function render(type) {
                     div.appendChild(video);
                     video.setAttribute('src', Product.allProducts[i].src);
                     div.setAttribute('id','addTutorialToCart');
-
                     video.setAttribute('class', 'play');
-                    // add for form a mouse over listener for video autoplay
-                    form.addEventListener('mouseover', playTheVideo);
+                    // add for form a one mouse over listener for video autoplay
+                    if (counterForAddingListner == 1){
+                        form.addEventListener('mouseover', playTheVideo);
+                    }
                     break;
                 case 'classes':
                     // create an image
@@ -130,9 +135,7 @@ function render(type) {
                     div.appendChild(classImg);
                     classImg.setAttribute('src', Product.allProducts[i].src);
                     div.setAttribute('id','addClasses');
-
                     break;
-                
             }
             // create a pragraph 
             let label = document.createElement('p');
@@ -146,10 +149,11 @@ function render(type) {
         }
     }
 }
-function renderItemofTheType(event) {
+function linktype(event) {
     event.preventDefault();
     // define the type for the new rendering products
-    let productsType = event.submitter.id;
+    let productsType = event.path[0].id;
+    console.log(productsType);
     render(productsType);
 }
 function removeRendered() {
@@ -188,11 +192,11 @@ function playTheVideo(event) {
     } else {
         // turn off autoplay for all videos 
         for (let i = 0; i < renderedItems.length; i++){
-            form.childNodes[i].firstChild.src = renderedItems[i].src;
+            if (form.childNodes[i].firstChild.src !== renderedItems[i].src){
+                form.childNodes[i].firstChild.src = renderedItems[i].src;
+            }
         }
     }
 }
 render('books');
 cart.restoreCartItems();
-
-
