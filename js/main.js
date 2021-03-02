@@ -1,6 +1,6 @@
 'use strict'
 //////////////////////////////////////////////////////////////////////////////
-let numberOfallProducts =15;
+let numberOfallProducts =18;
 /////////////////////////////////////////////////////////////////////////////
 let cart = new Cart([]);
 // construct all the products objects 
@@ -24,14 +24,21 @@ let book6 = new Product('headline', 'https://img.freepik.com/free-vector/geometr
 let book7 = new Product('headline', 'https://img.freepik.com/free-vector/geometric-leaflet-with-yellow-black-lines_1201-608.jpg?size=338&ext=jpg', 250, 'a book for head line', 'books');
 let book8 = new Product('headline', 'https://img.freepik.com/free-vector/geometric-leaflet-with-yellow-black-lines_1201-608.jpg?size=338&ext=jpg', 250, 'a book for head line', 'books');
 let book9 = new Product('headline', 'https://img.freepik.com/free-vector/geometric-leaflet-with-yellow-black-lines_1201-608.jpg?size=338&ext=jpg', 250, 'a book for head line', 'books');
+let book10 = new Product('headline', 'https://img.freepik.com/free-vector/geometric-leaflet-with-yellow-black-lines_1201-608.jpg?size=338&ext=jpg', 250, 'a book for head line', 'books');
 
 let tutorial1 = new Product('JavaScript', 'https://www.youtube.com/embed/Qqx_wzMmFeA', 300, 'javascript tutorials for biggener', 'tutorials');
 let tutorial2 = new Product('JavaScript', 'https://www.youtube.com/embed/lhNdUVh3qCc', 320, 'javascript tutorials for biggener', 'tutorials');
 let tutorial3 = new Product('JavaScript', 'https://www.youtube.com/embed/lhNdUVh3qCc', 320, 'javascript tutorials for biggener', 'tutorials');
 let tutorial4 = new Product('JavaScript', 'https://www.youtube.com/embed/lhNdUVh3qCc', 320, 'javascript tutorials for biggener', 'tutorials');
-let course1 = new Product('cooking', 'http://img.pgc.in.goldenmob.com/img/5aa4a740dd4a11ea8af7adb8a77d6017/af457e6a05ea35940819d92325c0625d-480.jpg', 400, 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic ', 'classes');
-let course2 = new Product('cooking2', 'https://sparkbox.com/uploads/featured_images/p-zatrow_20-07.png', 400, 'a cooking online class', 'classes');
+let course1 = new Product('cooking', 'http://0to100academy.com/wp-content/uploads/2020/05/main-qimg-28cadbd02699c25a88e5c78d73c7babc-1-300x288.png', 400,'2022 Complete Python Bootcamp From Zero \n to Hero in Python\n Learn Python like a Professional Start from the basics and go all the way to creating \n your own applications and games\n Created by josen jeky \n starting on April 22 2022','classes');
+// 'Class starts April 2, 2022. Enroll today to secure your spot! No application required.'
+// 'The deadline to enroll is March 31, 2022. No application required. '`,
+let course2 = new Product('cooking2', 'http://0to100academy.com/wp-content/uploads/2020/05/JavaScript-logo-1-300x300.png', 400, '2023 Complete Javascript Bootcamp From Zero \n to Hero in Javascript\n Learn Javascript like a Professional Start from the basics and go all the way to creating \n your own applications and games\n Created by italy darry \n starting on march 22 2023 ', 'classes');
+let course3 = new Product('cooking2', 'https://pixelmechanics.com.sg/wp-content/uploads/2019/04/css-1200x667.jpg', 400, '2022 Complete Css Bootcamp From Zero \n to Hero in Css\n Learn Css like a Professional Start from the basics and go all the way to creating \n your own applications and games\n Created by diana jeky \n starting on April 3 2022 ', 'classes');
+let course4 = new Product('cooking2', 'https://techbeacon.scdn7.secure.raxcdn.com/sites/default/files/styles/article_hero_image/public/html5-mobile-app-native-hybrid-pros-cons.jpg?itok=f2OysLvu', 400, '2022 Complete HTML From Zero \n to Hero in HTML\n Learn HTML like a Professional Start from the basics and go all the way to creating \n your own page\n Created by sandra bty \n starting on may 15 2022 ', 'classes');
+
 ////////////////////////////////////////////////////////////////////////////////
+
 // add a listner to the form and ul-form elements
 let form = document.getElementById('addToCart');
 form.addEventListener('submit', add);
@@ -104,6 +111,8 @@ function render(type) {
             renderedItems.push(Product.allProducts[i]);
             // second create a div to fill it by the product properties
             let div = document.createElement('div');
+            let div2 = document.createElement('div');
+            form.appendChild(div);
             form.appendChild(div);
             switch (type) {
                 case 'books':
@@ -134,10 +143,66 @@ function render(type) {
                     break;
                 
             }
-            // create a pragraph 
-            let label = document.createElement('p');
-            div.appendChild(label);
-            label.textContent = Product.allProducts[i].discription;
+            // create a pragraph ///////// don't try to now what this mean///
+            if ( Product.allProducts[i].productType==='classes') {
+                // console.log('its a class');
+               let label=document.createElement('p');
+               label.className='specialParagraph'
+               let label2=document.createElement('p');
+               let label3=document.createElement('p');
+               let label4=document.createElement('p');
+               let label5=document.createElement('p');
+               let label6=document.createElement('p');
+               let label7=document.createElement('p');
+               let section=document.createElement('section')
+
+
+            //    let breakEl=document.createElement('br');
+               section.appendChild(label);
+               section.appendChild(label2);
+               section.appendChild(label4);
+               section.appendChild(label5);
+               section.appendChild(label6);
+               section.appendChild(label7);
+
+               section.appendChild(label3);
+               div.appendChild(section);
+
+
+
+               let text= Object.assign(Product.allProducts[i].discription);
+               let text1= Object.assign(Product.allProducts[i].price);
+               console.log(text.split('\n')[0]);
+
+               
+               label.textContent=text.split('\n')[0]
+               label2.textContent=text.split('\n')[1]
+               label4.textContent=text.split('\n')[2]
+               label5.textContent=text.split('\n')[3]
+               label6.textContent=` INSTRUCTOR NAME:${text.split('\n')[4]}`
+               label7.textContent=` TIME:${text.split('\n')[5]}`
+
+
+               label3.textContent=`PRICE: ${text1} $`
+               label.style.fontWeight='bold'
+               label2.style.fontWeight='bold'
+               label3.style.fontWeight='bold'
+               label4.style.fontWeight='bold'
+               label5.style.fontWeight='bold'
+
+
+            //    label.appendChild(breakEl)
+            //    label.textContent+='another test' 'testtt\n sss'
+        ///////////////////////////////////////////////////////////////////////////
+                
+            } else {
+                
+                let label = document.createElement('p');
+                div.appendChild(label);
+                label.textContent =Product.allProducts[i].discription;
+            }
+
+      
             // create a button
             let btu = document.createElement('input');
             div.appendChild(btu);
