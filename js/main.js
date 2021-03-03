@@ -64,11 +64,14 @@ function add(event) {
     }
     // determine the clicked button
     let btu = event.submitter;
+
     // determine the clicked button index
     btu.setAttribute('id', 'clicked');
     let btuIndex;
     for (let i = 0; i < noOfBtu; i++) {
         let btuId = event.target[i].id;
+        // console.log(event.target[i].id);
+        // console.log(btu.id);
         if (btuId == btu.id) {
             btuIndex = i;
             break;
