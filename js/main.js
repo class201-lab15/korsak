@@ -42,8 +42,12 @@ let course4 = new Product('cooking2', 'https://techbeacon.scdn7.secure.raxcdn.co
 // add a listner to the form and ul-form elements
 let form = document.getElementById('addToCart');
 form.addEventListener('submit', add);
-let ulForm = document.getElementById('itemsRenderType');
-ulForm.addEventListener('submit', renderItemofTheType)
+let books = document.getElementById('books');
+let tutorials = document.getElementById('tutorials');
+let classes = document.getElementById('classes');
+books.addEventListener('click',linktype);
+tutorials.addEventListener('click',linktype);
+classes.addEventListener('click',linktype);
 // TO DO when a button is clicked in the form
 function add(event) {
     event.preventDefault();
@@ -82,10 +86,10 @@ function add(event) {
 }
 function addToTheCart(index) {
     // put the selected item in cart and save it in local storage
-    if (JSON.parse(localStorage.getItem('cart')).length == 0) {
+    if (localStorage.getItem('cart') === null) {
         cart.item.push(renderedItems[index]);
         cart.saveCartInLocalStorage(cart.item);
-    } else if (localStorage.getItem('cart') !== null){
+    } else if (JSON.parse(localStorage.getItem('cart')).length !== 0){
         let savedItems = JSON.parse(localStorage.getItem('cart'));
         for (let i = 0; i < savedItems.length; i++){
             if (savedItems[i].name == renderedItems[index].name){
@@ -108,8 +112,9 @@ function render(type) {
     renderedItems = [];
     // show the new type renderd products
     for (let i = 0; i < numberOfallProducts; i++) {
-        console.log(Product.allProducts[i].productType);
+        let counterForAddingListner = 0;
         if (Product.allProducts[i].productType == type) {
+            counterForAddingListner++;
             // first fill the new renderd item in the the following array
             renderedItems.push(Product.allProducts[i]);
             // second create a div to fill it by the product properties
@@ -131,10 +136,11 @@ function render(type) {
                     div.appendChild(video);
                     video.setAttribute('src', Product.allProducts[i].src);
                     div.setAttribute('id','addTutorialToCart');
-
                     video.setAttribute('class', 'play');
-                    // add for form a mouse over listener for video autoplay
-                    form.addEventListener('mouseover', playTheVideo);
+                    // add for form a one mouse over listener for video autoplay
+                    if (counterForAddingListner == 1){
+                        form.addEventListener('mouseover', playTheVideo);
+                    }
                     break;
                 case 'classes':
                     // create an image
@@ -142,9 +148,7 @@ function render(type) {
                     div.appendChild(classImg);
                     classImg.setAttribute('src', Product.allProducts[i].src);
                     div.setAttribute('id','addClasses');
-
                     break;
-                
             }
             // create a pragraph ///////// don't try to now what this mean///
             if ( Product.allProducts[i].productType==='classes') {
@@ -214,10 +218,11 @@ function render(type) {
         }
     }
 }
-function renderItemofTheType(event) {
+function linktype(event) {
     event.preventDefault();
     // define the type for the new rendering products
-    let productsType = event.submitter.id;
+    let productsType = event.path[0].id;
+    console.log(productsType);
     render(productsType);
 }
 function removeRendered() {
@@ -256,11 +261,11 @@ function playTheVideo(event) {
     } else {
         // turn off autoplay for all videos 
         for (let i = 0; i < renderedItems.length; i++){
-            form.childNodes[i].firstChild.src = renderedItems[i].src;
+            if (form.childNodes[i].firstChild.src !== renderedItems[i].src){
+                form.childNodes[i].firstChild.src = renderedItems[i].src;
+            }
         }
     }
 }
 render('books');
 cart.restoreCartItems();
-
-
