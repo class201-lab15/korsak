@@ -30,6 +30,7 @@
     font-size: 25px;
     padding-right: 10px;
     padding-left: 10px;
+    width: 100px;
   }
   
   /* Change the color of links on hover */
@@ -130,7 +131,7 @@
 }
 #container{
   margin-top: 40px;
-  height: 450px;
+  height: 400px;
   overflow: auto;
 overflow-y:auto ;
 }
@@ -246,12 +247,123 @@ height: 200px;
   background-color: rgb(201, 19, 125);
   max-width: 50%;
 }
+
+footer{
+  background-image:url(https://www.kateunderwoodhr.co.uk/wp-content/uploads/2020/05/training-and-furlough-1-980x490.jpg);
+  
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  /* padding: 55px 50px; */
+  margin-top: 50px;
+  clear: both;
+}
+
+.footer-left,.footer-center,.footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+.footer-left{
+  width: 30%;
+  margin-left: 5%;
+}
+footer h3{
+  color:  #ffffff;
+  font: normal 36px 'Open Sans', cursive;
+  padding-left: 42px;
+}
+.footer-company-name{
+  color: #fffbfb;
+    font-size: 21px;
+    font-weight: normal;
+    margin: 40px;
+}
+.footer-center{
+  width: 35%;
+}
+
+.footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  font-weight:400;
+  vertical-align: middle;
+  margin:0;
+}
+
+.footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+
+.footer-center p a{
+  color:  lightseagreen;
+  text-decoration: none;
+}
+
+.footer-right{
+  width: 25%;
+}
+.footer-company-about{
+  line-height: 27px;
+    color: #f0f8ff;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.footer-icons{
+  margin-top: 25px;
+}
+
+.footer-icons a{
+  display: inline-block;
+  width: 67px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
 ::-webkit-scrollbar {
-  width: 15px;
+  width: 6px;
 } 
 ::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(255, 0, 0, 0.3); 
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
 } 
 ::-webkit-scrollbar-thumb {
-  -webkit-box-shadow: inset 0 0 6px rgba(255, 0, 0, 0.3); 
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
 }
