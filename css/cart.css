@@ -1,11 +1,16 @@
 *{
-  margin: 0;;
+  margin: 0;
 }
 #navimg .nav{
-  background-image: url('../img/Student-Study-Laptop-Home-Notes-Desktop.jpg');
+ background-color: white;
   height: fit-content;
   background-repeat: no-repeat;
   background-size: cover;
+}
+#f {
+  background-color: #fde8cd;
+  height: 60px;
+  margin-bottom: 50px;
 }
 .nav {
   background-color: #333;
@@ -45,12 +50,7 @@
   margin-left: 15px;
   color: #49381f;
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #fde8cd;
-} 
+
 table{
 width:100%;
 table-layout: fixed;
@@ -58,15 +58,14 @@ table-layout: fixed;
 .tbl-content{
   height:400px;
   overflow-x:auto;
-  margin-top: 0px;
   border: 1px solid rgba(255,255,255,0.3);
 }
 th{
   padding: 20px 15px;
   text-align: center;
   font-weight: 500;
-  font-size: 12px;
-  color: grey;
+  font-size: 20px;
+  color: #49381f;
   text-transform: uppercase;
   height: 100px;
   width: 100px;
@@ -121,8 +120,8 @@ footer{
   text-align: left;
   font: bold 16px sans-serif;
   padding: 55px 50px;
-  margin-top: 10px;
   clear: both;
+  height: 215px;
 }
 .footer-left,.footer-center,.footer-right{
   display: inline-block;
@@ -176,7 +175,7 @@ footer h3{
   line-height:2;
 }
 .footer-center p a{
-  color:  lightseagreen;
+  color:  white;
   text-decoration: none;
 }
 .footer-right{
