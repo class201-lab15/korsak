@@ -4,17 +4,20 @@ height: 700px;
 background-repeat: no-repeat;
 background-size: cover;
 }
+#f {
+  background-color: #fde8cd;
+  height: 60px;
+}
 .nav {
   background-color: #333;
   overflow: hidden;
 }
 #about{
-  padding-top: 18px;
+  padding-top: 17px;
   padding-right: 20px;
 }
 #myBtn{
-  width: 110px;
-  padding-left: 10px;
+  width: 100px;
 }
 /* Style the links inside the navigation bar */
 .nav a {
@@ -31,7 +34,6 @@ background-size: cover;
 /* Change the color of links on hover */
 .nav a:hover {
   background-color:  #00917C;
-
 }
 /* Add a color to the active/current link */
 .nav a.active {
@@ -44,17 +46,18 @@ background-size: cover;
   margin-left: 15px;
   color: #49381f;
 }
+
 #p1{
-  margin-top: 200px;
+  margin-top: 250px;
   color:#49381f ;
   font-size: 50px;
-  margin-left: 10px;
+  margin-left: 100px;
 }
 #p2{
   color:#49381f ;
-  font-size: 30px;
-  margin: 0px;
-  margin-left: 30px;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-left: 100px;
 }
 /* for rateus */
 .modal {
@@ -122,12 +125,13 @@ main {
   top: 150px;
 }
 #bor{
+  margin-top: 30px;
 border-width:5px;
 /* border-style:solid; */
 border-color:rgb(6, 55, 83);
 height: 600px;
 background-color: #00917C;
-box-shadow: 5px 10px #888888; 
+margin-bottom: 30px;
 }
 h1{
   font-size: 30px;
@@ -144,15 +148,15 @@ p{
 }
 footer{
   background-image:url(https://www.kateunderwoodhr.co.uk/wp-content/uploads/2020/05/training-and-furlough-1-980x490.jpg);
-  
   background-repeat: no-repeat;
   background-size: 100%;
   width: 100%;
   text-align: left;
-  font: bold 16px sans-serif;
   padding: 55px 50px;
   margin-top: 10px;
   clear: both;
+  height: 300px;
+  font-family: 'Open Sans', sans-serif;
 }
 .footer-left,.footer-center,.footer-right{
   display: inline-block;
@@ -164,7 +168,6 @@ footer{
 }
 footer h3{
   color:  #ffffff;
-  font: normal 36px 'Open Sans', cursive;
   padding-left: 42px;
 }
 .footer-company-name{
@@ -206,7 +209,7 @@ footer h3{
   line-height:2;
 }
 .footer-center p a{
-  color:  lightseagreen;
+  color:  white
   text-decoration: none;
 }
 .footer-right{

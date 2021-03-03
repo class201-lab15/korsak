@@ -30,12 +30,12 @@ let tutorial1 = new Product('JavaScript', 'https://www.youtube.com/embed/Qqx_wzM
 let tutorial2 = new Product('JavaScript2', 'https://www.youtube.com/embed/lhNdUVh3qCc', 320, 'javascript tutorials for biggener', 'tutorials');
 let tutorial3 = new Product('JavaScript', 'https://www.youtube.com/embed/lhNdUVh3qCc', 380, 'javascript tutorials for biggener', 'tutorials');
 let tutorial4 = new Product('JavaScript2', 'https://www.youtube.com/embed/lhNdUVh3qCc', 550, 'javascript tutorials for biggener', 'tutorials');
-let course1 = new Product('python', 'img/python.png', 400,'2022 Complete Python Bootcamp From Zero \n to Hero in Python\n Learn Python like a Professional Start from the basics and go all the way to creating \n your own applications and games\n Created by josen jeky \n starting on April 22 2022','classes');
+let course1 = new Product('Python', 'img/python.png', 400 , 'A complete Python Bootcamp that will transform you from Zero to Hero./n Learn Python like a professional; start from the basics and go all the way to creating \n your own applications and games\n Instructor: Josen Jeky \n Start date: April 22 2022','classes');
 // 'Class starts April 2, 2022. Enroll today to secure your spot! No application required.'
 // 'The deadline to enroll is March 31, 2022. No application required. '`,
-let course2 = new Product('javascript', 'img/javascript.png', 700, '2023 Complete Javascript Bootcamp From Zero \n to Hero in Javascript\n Learn Javascript like a Professional Start from the basics and go all the way to creating \n your own applications and games\n Created by italy darry \n starting on march 22 2023 ', 'classes');
-let course3 = new Product('css', 'img/css.png', 630, '2022 Complete Css Bootcamp From Zero \n to Hero in Css\n Learn Css like a Professional Start from the basics and go all the way to creating \n your own applications and games\n Created by diana jeky \n starting on April 3 2022 ', 'classes');
-let course4 = new Product('html', 'img/html.png', 1000, '2022 Complete HTML From Zero \n to Hero in HTML\n Learn HTML like a Professional Start from the basics and go all the way to creating \n your own page\n Created by sandra bty \n starting on may 15 2022 ', 'classes');
+let course2 = new Product('JavaScript', 'img/javascript.png', 700, 'A complete JavaScript Bootcamp that will transform you from Zero to Hero./n Learn JavaScript like a professional; start from the basics and go all the way to creating \n your own applications and games\n Created by italy darry \n starting on march 22 2023 ', 'classes');
+let course3 = new Product('CSS', 'img/css.png', 630, 'A complete CSS Bootcamp that will transform you from Zero to Hero. Learn Css like a professional; start from the basics and go all the way to creating \n your own applications and games\n Instructor: Diana Jeky \n Start date: April 3 2022 ', 'classes');
+let course4 = new Product('HTML', 'img/html.png', 1000, 'A complete HTML Bootcamp that will transform you from Zero to Hero./n Learn HTML like a professional; start from the basics and go all the way to creating \n your own pages and websites\n Instructor: Sandra Bty \n Start date: may 15 2022 ', 'classes');
 
 ////////////////////////////////////////////////////////////////////////////////
 
