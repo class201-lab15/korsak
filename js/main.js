@@ -214,7 +214,7 @@ function render(type) {
             let btu = document.createElement('input');
             div.appendChild(btu);
             btu.setAttribute('type', 'submit');
-            btu.setAttribute('value', 'buy');
+            btu.setAttribute('value', `${Product.allProducts[i].price}$`);
         }
     }
 }
