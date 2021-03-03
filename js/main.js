@@ -27,15 +27,15 @@ let book9 = new Product('headline', 'https://img.freepik.com/free-vector/geometr
 let book10 = new Product('headline', 'https://img.freepik.com/free-vector/geometric-leaflet-with-yellow-black-lines_1201-608.jpg?size=338&ext=jpg', 250, 'a book for head line', 'books');
 
 let tutorial1 = new Product('JavaScript', 'https://www.youtube.com/embed/Qqx_wzMmFeA', 300, 'javascript tutorials for biggener', 'tutorials');
-let tutorial2 = new Product('JavaScript', 'https://www.youtube.com/embed/lhNdUVh3qCc', 320, 'javascript tutorials for biggener', 'tutorials');
+let tutorial2 = new Product('JavaScript2', 'https://www.youtube.com/embed/lhNdUVh3qCc', 320, 'javascript tutorials for biggener', 'tutorials');
 let tutorial3 = new Product('JavaScript', 'https://www.youtube.com/embed/lhNdUVh3qCc', 320, 'javascript tutorials for biggener', 'tutorials');
 let tutorial4 = new Product('JavaScript', 'https://www.youtube.com/embed/lhNdUVh3qCc', 320, 'javascript tutorials for biggener', 'tutorials');
 let course1 = new Product('cooking', 'http://0to100academy.com/wp-content/uploads/2020/05/main-qimg-28cadbd02699c25a88e5c78d73c7babc-1-300x288.png', 400,'2022 Complete Python Bootcamp From Zero \n to Hero in Python\n Learn Python like a Professional Start from the basics and go all the way to creating \n your own applications and games\n Created by josen jeky \n starting on April 22 2022','classes');
 // 'Class starts April 2, 2022. Enroll today to secure your spot! No application required.'
 // 'The deadline to enroll is March 31, 2022. No application required. '`,
 let course2 = new Product('cooking2', 'http://0to100academy.com/wp-content/uploads/2020/05/JavaScript-logo-1-300x300.png', 400, '2023 Complete Javascript Bootcamp From Zero \n to Hero in Javascript\n Learn Javascript like a Professional Start from the basics and go all the way to creating \n your own applications and games\n Created by italy darry \n starting on march 22 2023 ', 'classes');
-let course3 = new Product('cooking2', 'https://pixelmechanics.com.sg/wp-content/uploads/2019/04/css-1200x667.jpg', 400, '2022 Complete Css Bootcamp From Zero \n to Hero in Css\n Learn Css like a Professional Start from the basics and go all the way to creating \n your own applications and games\n Created by diana jeky \n starting on April 3 2022 ', 'classes');
-let course4 = new Product('cooking2', 'https://techbeacon.scdn7.secure.raxcdn.com/sites/default/files/styles/article_hero_image/public/html5-mobile-app-native-hybrid-pros-cons.jpg?itok=f2OysLvu', 400, '2022 Complete HTML From Zero \n to Hero in HTML\n Learn HTML like a Professional Start from the basics and go all the way to creating \n your own page\n Created by sandra bty \n starting on may 15 2022 ', 'classes');
+let course3 = new Product('cookin3', 'https://pixelmechanics.com.sg/wp-content/uploads/2019/04/css-1200x667.jpg', 400, '2022 Complete Css Bootcamp From Zero \n to Hero in Css\n Learn Css like a Professional Start from the basics and go all the way to creating \n your own applications and games\n Created by diana jeky \n starting on April 3 2022 ', 'classes');
+let course4 = new Product('cooking4', 'https://techbeacon.scdn7.secure.raxcdn.com/sites/default/files/styles/article_hero_image/public/html5-mobile-app-native-hybrid-pros-cons.jpg?itok=f2OysLvu', 400, '2022 Complete HTML From Zero \n to Hero in HTML\n Learn HTML like a Professional Start from the basics and go all the way to creating \n your own page\n Created by sandra bty \n starting on may 15 2022 ', 'classes');
 
 ////////////////////////////////////////////////////////////////////////////////
 
