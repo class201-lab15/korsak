@@ -2,34 +2,109 @@
 <html lang="en">
 
 <head>
-  <title>korsak home</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/index.css">
-  <link rel="stylesheet" href="css/nav.css">
 </head>
 
 <body>
-  <div id="bac">
-    <div class="topnav">
-      <label id="logo">Korsak</label>
-      <a class="active" href="#home">Home</a>
-      <a href="#rate">Rate us</a>
-      <a href="#contact">Contact</a>
-      <a href="about.html">About</a>
+  <header>
+    <div id="navimg">
+      <div class="nav">
+        <div id="f">
+          <label style="color: #49381f;" id="logo">
+            <span style='color: #00917C'>K</span>
+            orsak
+          </label>
+          <a id="about" href="about.html">About</a>
+          <a> <button
+              style="background-color: Transparent;font-size: 25px;border: none;color: #49381f;text-align: center;"
+              id="myBtn" href="#rat">Rate us</button></a>
+          <div id="myModal" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p>Please Rate Us..
+                <link rel="stylesheet"
+                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+              </p>
+            </div>
+          </div>
+          </a>
+          <a href="main.html">Go To Shop </a>
+          <a class="active" href="#"> Home</a>
+        </div>
+        <p id="p1">Make every study hour count</p>
+        <p id="p2"> 40 million course-specific study materials.</p>
+      </div>
     </div>
-    <br>
-    <br>
-    <p class="text" style="font-size: 40px;margin-top: 100px;">Make every study hour count</p>
-    <p class="text" style="font-size: 20px;">Access 0 million course-specific study materials.</p>
-  </div>
+    </div>
+  </header>
   <main>
-    <div>
-      <label id="lab1">Popular Courses</label>
+    <div id="bor">
+      <label style="font-size: 50px;margin-left: 100px;font-family: 'Berkshire Swash', cursive;color: #f7fcfb;">Popular
+        Courses</label>
+      <div id="firstCard">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="../img/41STA3KRZWL._SX258_BO1,204,203,200_.jpg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="firstCard2">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="../img/live-online-class.jpg" alt="Avatar" style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="firstCard3">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <video src="../img/Introduction to CSS.mp4" style="width:300px;height:300px;" controls autoplay></video>
+            </div>
+            <div class="flip-card-back">
+              <h1>John Doe</h1>
+              <p>Architect & Engineer</p>
+              <p>We love that guy</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
+  <footer>
+
+
+
+
+
+
+  </footer>
+  <script src="js/app.js"></script>
 </body>
 
 </html>
