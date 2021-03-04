@@ -1,8 +1,4 @@
-.specialParagraph p{
-    display: block;
-    float: left;
-    margin-left: 10px;
-}
+
 #navimg .nav{
   background-image: url('../img/Student-Study-Laptop-Home-Notes-Desktop.jpg');
   height: fit-content;
@@ -24,7 +20,7 @@
 #myBtn{
   width: 100px;
 }
-/* Style the links inside the navigation bar */
+
 .nav a {
   float: right;
   color: #49381f;
@@ -36,11 +32,10 @@
   padding-left: 10px;
   width: 100px;
 }
-/* Change the color of links on hover */
 .nav a:hover {
   background-color:  #00917C;
 }
-/* Add a color to the active/current link */
+
 .nav a.active {
   background-color: #49381f;
   color: white;
@@ -123,7 +118,7 @@ display:flex;
 align-items:center;
 flex-direction:column;
 border-radius:10px;
-box-shadow: inset -2px -18px 20px 10px #fde8cd;
+box-shadow: inset -2px -18px 20px 10px #00917c;
 border-bottom-left-radius: 50px ;
 }
 #addToCart img{
@@ -137,7 +132,7 @@ border-radius:50%;
 width:100%;
 padding:.8rem;
 border:none;
-background: linear-gradient(to right,#fde8cd,#6cbbaf,#2aa593,#00917c);
+background: linear-gradient(to right,#eee9e2,#6cbbaf,#2aa593,#00917c);
 color:#fff;
 transition:.2s ease-in-out;
 cursor:pointer;
@@ -167,10 +162,11 @@ position: relative;
 padding: 2px;
 height: 400px;
 flex: 50%;
-box-shadow: 0px 1px 13px 3px #fde8cd;
+box-shadow: inset -2px -18px 20px 10px #00917c;
 margin: 10px;
 font-size: 30px;
-background:#00917c;
+background:rgb(255, 255, 255);
+border-bottom-left-radius: 50px ;
 display:flex;
 align-items:center;
 flex-direction:column;
@@ -189,18 +185,17 @@ width: 200px;
 height: 200px;
 }
 #addClasses input{
-margin: 45%;
+margin: 55%;
 width:50%;
 }
 #addClasses section{
 top: 50px;
 position: absolute;
 left: 15px;
-/* background-color: #fde8cd; */
 max-width: 60%;
 font-family: 'Open Sans', sans-serif;
-color: rgb(255, 255, 255);
-/* height: 5px; */
+color: rgb(0, 0, 0);
+
 }
 footer{
   background-image:url(https://www.kateunderwoodhr.co.uk/wp-content/uploads/2020/05/training-and-furlough-1-980x490.jpg);
@@ -209,7 +204,6 @@ footer{
   width: 100%;
   text-align: left;
   font: bold 16px sans-serif;
-  /* padding: 55px 50px; */
   margin-top: 50px;
   clear: both;
   height: 300px;

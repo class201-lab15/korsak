@@ -16,27 +16,27 @@ let Product = function (name, src, price, discription, productType) {
 Product.allProducts = [];
 // create products
 //////////////////////////////////////////////////////////////////////////////
-let book1 = new Product('headline', 'https://img.freepik.com/free-vector/geometric-leaflet-with-yellow-black-lines_1201-608.jpg?size=338&ext=jpg', 250, 'a book for head line', 'books');
-let book2 = new Product('annual report', 'https://img.freepik.com/free-vector/nice-wavy-blue-annual-report-business-brochure-design_1017-27437.jpg', 285, 'a book for annual report', 'books');
-let book3 = new Product('software engineering', 'https://img.freepik.com/free-vector/nice-wavy-blue-annual-report-business-brochure-design_1017-27437.jpg', 250, 'a book for head line', 'books');
-let book4 = new Product('The future of software quality assurance', 'https://img.freepik.com/free-vector/nice-wavy-blue-annual-report-business-brochure-design_1017-27437.jpg', 150, 'software engineering', 'books');
-let book5 = new Product('annual report', 'https://img.freepik.com/free-vector/nice-wavy-blue-annual-report-business-brochure-design_1017-27437.jpg', 285, 'a book for Css', 'books');
-let book6 = new Product('headline', 'https://img.freepik.com/free-vector/geometric-leaflet-with-yellow-black-lines_1201-608.jpg?size=338&ext=jpg', 250, 'The future of software ', 'books');
-let book7 = new Product('headline', 'https://img.freepik.com/free-vector/geometric-leaflet-with-yellow-black-lines_1201-608.jpg?size=338&ext=jpg', 250, 'a book for head line', 'books');
-let book8 = new Product('headline', 'https://img.freepik.com/free-vector/geometric-leaflet-with-yellow-black-lines_1201-608.jpg?size=338&ext=jpg', 250, 'a book for head line', 'books');
-let book9 = new Product('headline', 'https://img.freepik.com/free-vector/geometric-leaflet-with-yellow-black-lines_1201-608.jpg?size=338&ext=jpg', 250, 'a book for head line', 'books');
-let book10 = new Product('headline', 'https://img.freepik.com/free-vector/geometric-leaflet-with-yellow-black-lines_1201-608.jpg?size=338&ext=jpg', 250, 'a book for head line', 'books');
+let book1 = new Product('headline', 'https://img.freepik.com/free-vector/geometric-leaflet-with-yellow-black-lines_1201-608.jpg?size=338&ext=jpg', 250, 'Alogorithms', 'books');
+let book2 = new Product('annual report', 'https://img.freepik.com/free-vector/nice-wavy-blue-annual-report-business-brochure-design_1017-27437.jpg', 285, 'Clean Architecture', 'books');
+let book3 = new Product('software engineering', 'https://image.freepik.com/free-vector/green-commercial-annual-report-template_1201-1061.jpg', 250, 'Refactoring', 'books');
+let book4 = new Product('The future of software quality assurance', 'https://image.freepik.com/free-vector/red-annual-report-book-cover-template_1201-718.jpg', 150, 'software engineering', 'books');
+let book5 = new Product('annual report', 'https://image.freepik.com/free-vector/corporate-flyer_1409-799.jpg', 285, 'a book for Css', 'books');
+let book6 = new Product('headline', 'https://image.freepik.com/free-vector/stylish-wavy-flyer_1409-801.jpg', 250, 'The future of software ', 'books');
+let book7 = new Product('headline', 'https://image.freepik.com/free-vector/stylish-red-business-annual-report-brochure-template-design_1017-27436.jpg', 250, 'Design Patterns', 'books');
+let book8 = new Product('headline', 'https://image.freepik.com/free-vector/elegant-annual-report-business-flyer-modern-design_1017-27434.jpg', 250, 'Clean Code', 'books');
+let book9 = new Product('headline', 'https://image.freepik.com/free-vector/abstract-elegant-winter-book-cover_23-2148798745.jpg', 250, 'Code Complete', 'books');
+let book10 = new Product('headline', 'https://image.freepik.com/free-vector/abstract-business-book-cover-template_23-2148726776.jpg', 250, 'We Are Business', 'books');
 
-let tutorial1 = new Product('JavaScript', 'https://www.youtube.com/embed/Qqx_wzMmFeA', 300, 'javascript tutorials for biggener', 'tutorials');
+let tutorial1 = new Product('JavaScript', 'https://www.youtube.com/embed/Qqx_wzMmFeA', 300, 'Clever Programmer', 'tutorials');
 let tutorial2 = new Product('JavaScript2', 'https://www.youtube.com/embed/lhNdUVh3qCc', 320, 'javascript tutorials for biggener', 'tutorials');
-let tutorial3 = new Product('JavaScript', 'https://www.youtube.com/embed/lhNdUVh3qCc', 380, 'javascript tutorials for biggener', 'tutorials');
-let tutorial4 = new Product('JavaScript2', 'https://www.youtube.com/embed/lhNdUVh3qCc', 550, 'javascript tutorials for biggener', 'tutorials');
-let course1 = new Product('Python', 'img/python.png', 400 , 'A complete Python Bootcamp that will transform you from Zero to Hero./n Learn Python like a professional; start from the basics and go all the way to creating \n your own applications and games\n Instructor: Josen Jeky \n Start date: April 22 2022','classes');
+let tutorial3 = new Product('JavaScript', 'https://www.youtube.com/embed/UB1O30fR-EE', 380, 'HTML crash', 'tutorials');
+let tutorial4 = new Product('JavaScript2', 'https://www.youtube.com/embed/qz0aGYrrlhU', 550, 'HTML tutorials for biggener', 'tutorials');
+let course1 = new Product('Python', 'img/python.png', 400 , 'A complete Python Bootcamp that will transform you  \n from Zero to Hero.\n Learn Python like a professional; start from the basics and go all the way to creating  your own applications and games\n Instructor: Josen Jeky \n Start date: April 22 2022','classes');
 // 'Class starts April 2, 2022. Enroll today to secure your spot! No application required.'
 // 'The deadline to enroll is March 31, 2022. No application required. '`,
-let course2 = new Product('JavaScript', 'img/javascript.png', 700, 'A complete JavaScript Bootcamp that will transform you from Zero to Hero./n Learn JavaScript like a professional; start from the basics and go all the way to creating \n your own applications and games\n Created by italy darry \n starting on march 22 2023 ', 'classes');
-let course3 = new Product('CSS', 'img/css.png', 630, 'A complete CSS Bootcamp that will transform you from Zero to Hero. Learn Css like a professional; start from the basics and go all the way to creating \n your own applications and games\n Instructor: Diana Jeky \n Start date: April 3 2022 ', 'classes');
-let course4 = new Product('HTML', 'img/html.png', 1000, 'A complete HTML Bootcamp that will transform you from Zero to Hero./n Learn HTML like a professional; start from the basics and go all the way to creating \n your own pages and websites\n Instructor: Sandra Bty \n Start date: may 15 2022 ', 'classes');
+let course2 = new Product('JavaScript', 'img/javascript.png', 700, 'A complete JavaScript Bootcamp that will transform\n you from Zero to Hero.\n Learn JavaScript like a professional; start from the basics and go all the way to creating your own applications and games\n Created by italy darry \n starting on march 22 2023 ', 'classes');
+let course3 = new Product('CSS', 'img/css.png', 630, 'A complete CSS Bootcamp that will transform\n you from Zero to Hero. \nLearn Css like a professional; start from the basics and go all the way to creating  your own applications and games\n Instructor: Diana Jeky \n Start date: April 3 2022 ', 'classes');
+let course4 = new Product('HTML', 'img/html.png', 1000, 'A complete HTML Bootcamp that will transform  \n you from Zero to Hero.\n Learn HTML like a professional; start from the basics and go all the way to creating  your own pages and websites\n Instructor: Sandra Bty \n Start date: may 15 2022 ', 'classes');
 
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -153,9 +153,9 @@ function render(type) {
                     div.setAttribute('id','addClasses');
                     break;
             }
-            // create a pragraph ///////// don't try to now what this mean///
+           
             if ( Product.allProducts[i].productType==='classes') {
-                // console.log('its a class');
+                
                let label=document.createElement('p');
                label.className='specialParagraph'
                let label2=document.createElement('p');
@@ -165,7 +165,7 @@ function render(type) {
                let label6=document.createElement('p');
                let label7=document.createElement('p');
                let section=document.createElement('section')
-            //    let breakEl=document.createElement('br');
+            
                section.appendChild(label);
                section.appendChild(label2);
                section.appendChild(label4);
@@ -181,21 +181,18 @@ function render(type) {
                label2.textContent=text.split('\n')[1]
                label4.textContent=text.split('\n')[2]
                label5.textContent=text.split('\n')[3]
-               label6.textContent=` INSTRUCTOR NAME:${text.split('\n')[4]}`
-               label7.textContent=` TIME:${text.split('\n')[5]}`
-            //    label3.textContent=`PRICE: ${text1} $`
+               label6.textContent=text.split('\n')[4]
+
+            
                label.style.height='20px'
                label2.style.height='35px'
-               label3.style.height='35px'
-               label4.style.height='35px'
-               label5.style.height='35px'
+               label3.style.height='25px'
+               label4.style.height='65px'
+               label5.style.height='20px'
                label6.style.height='20px'
-               label7.style.heig='20px'
-               label6.style.color='#fde8cd'
-               label7.style.color='#fde8cd'
-            //    label.appendChild(breakEl)
-            //    label.textContent+='another test' 'testtt\n sss'
-        ///////////////////////////////////////////////////////////////////////////   
+
+       
+         
             } else { 
                 let label = document.createElement('p');
                 div.appendChild(label);
