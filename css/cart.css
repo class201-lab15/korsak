@@ -50,15 +50,18 @@
   margin-left: 15px;
   color: #49381f;
 }
-
 table{
 width:100%;
 table-layout: fixed;
+}
+.tbl-header{
+  width:70%;
 }
 .tbl-content{
   height:400px;
   overflow-x:auto;
   border: 1px solid rgba(255,255,255,0.3);
+  width:70%;
 }
 th{
   padding: 20px 15px;
@@ -111,6 +114,67 @@ img,iframe {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+}
+.numBtu{
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+input[type=number]::-webkit-inner-spin-button {  
+  width: 20px;
+  height: 50px;
+}
+body {
+  position: relative;
+}
+.empty{
+  position: absolute;
+  right: 40px;
+  top: 160px;
+  width: 25%;
+  height: 180px;
+}
+.onlyOne{
+  position: absolute;
+  right: 40px;
+  top: 160px;
+  width: 25%;
+  height: 300px;
+}
+.onlyTwo{
+  position: absolute;
+  right: 40px;
+  top: 160px;
+  width: 25%;
+  height: 330px;
+}
+.moreThanTree{
+  position: absolute;
+  right: 40px;
+  top: 160px;
+  width: 25%;
+  height: 490px;
+}
+#totalPrice{
+  height: fit-content;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid black;
+  border-radius: 20px;
+  text-align: center;
+  font-size: 40px;
+}
+#submit{
+  position: absolute;
+  bottom: 0px;
+  font-size: 40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  left: 35%;
+  color: #49381f;
+  background-color: #00917C;
 }
 footer{
   background-image:url(https://www.kateunderwoodhr.co.uk/wp-content/uploads/2020/05/training-and-furlough-1-980x490.jpg);
