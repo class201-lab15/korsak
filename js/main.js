@@ -10,6 +10,7 @@ let Product = function (name, src, price, discription, productType) {
     this.price = price;
     this.discription = discription
     this.productType = productType;
+    this.quantity = 1;
     Product.allProducts.push(this);
 }
 Product.allProducts = [];
@@ -162,8 +163,6 @@ function render(type) {
                let label6=document.createElement('p');
                let label7=document.createElement('p');
                let section=document.createElement('section')
-
-
             //    let breakEl=document.createElement('br');
                section.appendChild(label);
                section.appendChild(label2);
@@ -171,25 +170,17 @@ function render(type) {
                section.appendChild(label5);
                section.appendChild(label6);
                section.appendChild(label7);
-
                section.appendChild(label3);
                div.appendChild(section);
-
-
-
                let text= Object.assign(Product.allProducts[i].discription);
                let text1= Object.assign(Product.allProducts[i].price);
                console.log(text.split('\n')[0]);
-
-               
                label.textContent=text.split('\n')[0]
                label2.textContent=text.split('\n')[1]
                label4.textContent=text.split('\n')[2]
                label5.textContent=text.split('\n')[3]
                label6.textContent=` INSTRUCTOR NAME:${text.split('\n')[4]}`
                label7.textContent=` TIME:${text.split('\n')[5]}`
-
-
             //    label3.textContent=`PRICE: ${text1} $`
                label.style.height='20px'
                label2.style.height='35px'
@@ -200,22 +191,14 @@ function render(type) {
                label7.style.heig='20px'
                label6.style.color='#fde8cd'
                label7.style.color='#fde8cd'
-
-
-
-
             //    label.appendChild(breakEl)
             //    label.textContent+='another test' 'testtt\n sss'
-        ///////////////////////////////////////////////////////////////////////////
-                
-            } else {
-                
+        ///////////////////////////////////////////////////////////////////////////   
+            } else { 
                 let label = document.createElement('p');
                 div.appendChild(label);
                 label.textContent =Product.allProducts[i].discription;
             }
-
-      
             // create a button
             let btu = document.createElement('input');
             div.appendChild(btu);
