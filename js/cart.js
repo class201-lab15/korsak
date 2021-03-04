@@ -11,6 +11,7 @@ totalPrice.appendChild(totalMessage);
 totalPrice.appendChild(price);
 let submitButton = document.getElementById('submit');
 submitButton.addEventListener('click',buyItems);
+let cartSpan = document.getElementById('cartSpan');
 function renderTable() {
     totalItemsPrice = 0;
     let firstRow = document.createElement('tr');
@@ -184,6 +185,7 @@ function checkTheTableSize(){
         totalMessage.textContent = 'Please fill the cart';
         price.textContent = ''
     }
+    cartSpan.textContent = `(${cart.item.length})`;
 }
 function buyItems(event){
     alert('thanks for buying from korsak');

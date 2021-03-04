@@ -49,6 +49,7 @@ let classes = document.getElementById('classes');
 books.addEventListener('click',linktype);
 tutorials.addEventListener('click',linktype);
 classes.addEventListener('click',linktype);
+let cartSpan = document.getElementById('cartSpan');
 // TO DO when a button is clicked in the form
 function add(event) {
     event.preventDefault();
@@ -105,6 +106,7 @@ function addToTheCart(index) {
         cart.item.push(renderedItems[index]);
         cart.saveCartInLocalStorage(cart.item);
     }
+    cartSpan.textContent = `(${cart.item.length})`;
 }
 function render(type) {
     // remove the previous type rendered products 
@@ -258,3 +260,4 @@ function playTheVideo(event) {
 }
 render('books');
 cart.restoreCartItems();
+cartSpan.textContent = `(${cart.item.length})`;
